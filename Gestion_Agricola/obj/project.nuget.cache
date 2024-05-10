@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "kxeTmmQZ0fNlzVypiEpIpuXy/XUX+kUHjnSM1DSt5ZB/8bzTPi+HeVsjSSHfwOKT6BLVcETP6wOyRKd2XKJ1Ag==",
+  "dgSpecHash": "gUlpdkTjrsXl+4w0cQOMCiXyVKO0yK9auMdK7ufrO2YLETLjQGDSAtuXAxbWAkZkDyamSqOjxzp94enuzuSZHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\moise\\source\\repos\\Gestion_Agricola\\Gestion_Agricola\\Gestion_Agricola.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Fam. Medina\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fam. Medina\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Fam. Medina\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Fam. Medina\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Fam. Medina\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
