@@ -13,19 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
-      "projectName": "Gestion_Agricola",
-      "projectPath": "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
-      "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\obj\\",
-=======
       "projectUniqueName": "C:\\Users\\moise\\source\\repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
       "projectName": "Gestion_Agricola",
       "projectPath": "C:\\Users\\moise\\source\\repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
       "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\moise\\source\\repos\\proyecto\\Gestion_Agricola\\obj\\",
->>>>>>> ramaclima
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moise\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -80,5 +72,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\moise\\source\\repos\\proyecto\\Gestion_Agricola\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

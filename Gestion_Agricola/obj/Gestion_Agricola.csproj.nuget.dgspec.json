@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
-        "projectName": "Gestion_Agricola",
-        "projectPath": "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
-        "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\obj\\",
-=======
     "C:\\Users\\moise\\source\\repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj": {}
   },
   "projects": {
@@ -25,7 +12,6 @@
         "projectPath": "C:\\Users\\moise\\source\\repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
         "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\moise\\source\\repos\\proyecto\\Gestion_Agricola\\obj\\",
->>>>>>> ramaclima
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\moise\\AppData\\Roaming\\NuGet\\NuGet.Config",
