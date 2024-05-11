@@ -16,3 +16,4 @@ C:\Users\moise\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\G
 C:\Users\moise\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.genruntimeconfig.cache
 C:\Users\moise\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\ref\Gestion_Agricola.dll
 C:\Users\moise\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Login.resources
+C:\Users\moise\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Properties.Resources.resources
