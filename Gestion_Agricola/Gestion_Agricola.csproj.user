@@ -7,5 +7,8 @@
     <Compile Update="SubventanaClima.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Ventana_Gerente.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
