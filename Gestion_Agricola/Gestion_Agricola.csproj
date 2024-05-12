@@ -8,4 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MaterialSkin" Version="0.2.1" />
+  </ItemGroup>
+
 </Project>

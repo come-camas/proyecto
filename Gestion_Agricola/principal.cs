@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,21 @@ using System.Windows.Forms;
 
 namespace Gestion_Agricola
 {
-    public partial class principal : Form
+    public partial class principal : MaterialSkin.Controls.MaterialForm
     {
         public principal()
         {
             InitializeComponent();
+        }
+
+        private void principal_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
