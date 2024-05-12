@@ -44,6 +44,12 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "MaterialSkin": {
+              "target": "Package",
+              "version": "[0.2.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
