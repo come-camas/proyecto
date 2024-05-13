@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Gestion_Agricola
 {
-    public partial class principal : MaterialSkin.Controls.MaterialForm
+    public partial class principal : Form
     {
         public principal()
         {
@@ -33,6 +33,8 @@ namespace Gestion_Agricola
         {
 
         }
+        #region SubMenu
+
         public void CustomizarDiseño()
         {
             subPanelAlmacenes.Visible = false;
@@ -79,6 +81,7 @@ namespace Gestion_Agricola
 
         private void btVerAlmacenes_Click(object sender, EventArgs e)
         {
+            AbrirFormHijo(new VerAlmacenes());
             // Lineas de codigo
             //
             //
@@ -87,6 +90,7 @@ namespace Gestion_Agricola
 
         private void btGestionarAlmacenes_Click(object sender, EventArgs e)
         {
+            AbrirFormHijo(new Gestionar_Almacenes());
             // Lineas de codigo
             //
             //
@@ -100,6 +104,7 @@ namespace Gestion_Agricola
 
         private void btTareasPendientes_Click(object sender, EventArgs e)
         {
+            AbrirFormHijo(new Tareas_Pendientes());
             // Lineas de codigo
             //
             //
@@ -108,6 +113,7 @@ namespace Gestion_Agricola
 
         private void btRecordatorio_Click(object sender, EventArgs e)
         {
+            AbrirFormHijo(new Recordatorio());
             // Lineas de codigo
             //
             //
@@ -116,6 +122,7 @@ namespace Gestion_Agricola
 
         private void btCalendario_Click(object sender, EventArgs e)
         {
+            AbrirFormHijo(new Calendario());
             // Lineas de codigo
             //
             //
@@ -130,6 +137,7 @@ namespace Gestion_Agricola
 
         private void btAnalisisClimaHoy_Click(object sender, EventArgs e)
         {
+            AbrirFormHijo(new Analisis_Hoy());
             // Lineas de codigo
             //
             //
@@ -138,6 +146,7 @@ namespace Gestion_Agricola
 
         private void btAnalisisClima15dias_Click(object sender, EventArgs e)
         {
+            AbrirFormHijo(new Analisis_15Dias());
             // Lineas de codigo
             //
             //
@@ -146,6 +155,7 @@ namespace Gestion_Agricola
 
         private void btAnalisisClima30diass_Click(object sender, EventArgs e)
         {
+            AbrirFormHijo(new Analisis_30Dias());
             // Lineas de codigo
             //
             //
@@ -154,11 +164,13 @@ namespace Gestion_Agricola
 
         private void btParcelas_Click(object sender, EventArgs e)
         {
+            
             MostrarSubmenu(subPanelParcelas);
         }
 
         private void btVerParcelas_Click(object sender, EventArgs e)
         {
+            AbrirFormHijo(new Ver_Parcelas());
             // Lineas de codigo
             //
             //
@@ -167,10 +179,40 @@ namespace Gestion_Agricola
 
         private void btGestionarParcelas_Click(object sender, EventArgs e)
         {
+            AbrirFormHijo(new Gestionar_Parcelas());
             // Lineas de codigo
             //
             //
             ocultar();
+        }
+
+        private void btCerrarSesion_Click(object sender, EventArgs e)
+        {
+            ocultar();
+        }
+        #endregion subMenu
+
+
+        private Form activeForm = null;
+        private void AbrirFormHijo(Form hijo)
+        {
+            if (activeForm != null)
+            
+                activeForm.Close();
+                activeForm = hijo;
+                hijo.TopLevel = false;
+                hijo.FormBorderStyle = FormBorderStyle.None;
+                hijo.Dock = DockStyle.Fill;
+                ChildrenForm.Controls.Add(hijo);
+                ChildrenForm.Tag = hijo;
+                hijo.BringToFront();
+                hijo.Show();
+            
+        }
+
+        private void ChildrenForm_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

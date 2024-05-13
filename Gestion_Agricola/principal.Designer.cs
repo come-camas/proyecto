@@ -49,6 +49,7 @@
             btVerAlmacenes = new Button();
             btAlmacenes = new Button();
             panel2 = new Panel();
+            ChildrenForm = new Panel();
             panel1.SuspendLayout();
             subPanelParcelas.SuspendLayout();
             subPanelAnalisisDelClima.SuspendLayout();
@@ -73,7 +74,7 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 850);
+            panel1.Size = new Size(250, 674);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint_1;
             // 
@@ -83,7 +84,7 @@
             btCerrarSesion.Dock = DockStyle.Top;
             btCerrarSesion.FlatAppearance.BorderSize = 0;
             btCerrarSesion.FlatStyle = FlatStyle.Flat;
-            btCerrarSesion.Location = new Point(0, 663);
+            btCerrarSesion.Location = new Point(0, 633);
             btCerrarSesion.Name = "btCerrarSesion";
             btCerrarSesion.Padding = new Padding(10, 0, 0, 0);
             btCerrarSesion.Size = new Size(250, 40);
@@ -91,6 +92,7 @@
             btCerrarSesion.Text = "Cerrar sesion";
             btCerrarSesion.TextAlign = ContentAlignment.MiddleLeft;
             btCerrarSesion.UseVisualStyleBackColor = false;
+            btCerrarSesion.Click += btCerrarSesion_Click;
             // 
             // subPanelParcelas
             // 
@@ -98,9 +100,9 @@
             subPanelParcelas.Controls.Add(btGestionarParcelas);
             subPanelParcelas.Controls.Add(btVerParcelas);
             subPanelParcelas.Dock = DockStyle.Top;
-            subPanelParcelas.Location = new Point(0, 589);
+            subPanelParcelas.Location = new Point(0, 565);
             subPanelParcelas.Name = "subPanelParcelas";
-            subPanelParcelas.Size = new Size(250, 74);
+            subPanelParcelas.Size = new Size(250, 68);
             subPanelParcelas.TabIndex = 7;
             // 
             // btGestionarParcelas
@@ -143,7 +145,7 @@
             btParcelas.Dock = DockStyle.Top;
             btParcelas.FlatAppearance.BorderSize = 0;
             btParcelas.FlatStyle = FlatStyle.Flat;
-            btParcelas.Location = new Point(0, 549);
+            btParcelas.Location = new Point(0, 525);
             btParcelas.Name = "btParcelas";
             btParcelas.Padding = new Padding(10, 0, 0, 0);
             btParcelas.Size = new Size(250, 40);
@@ -160,9 +162,9 @@
             subPanelAnalisisDelClima.Controls.Add(btAnalisisClima15dias);
             subPanelAnalisisDelClima.Controls.Add(btAnalisisClimaHoy);
             subPanelAnalisisDelClima.Dock = DockStyle.Top;
-            subPanelAnalisisDelClima.Location = new Point(0, 437);
+            subPanelAnalisisDelClima.Location = new Point(0, 419);
             subPanelAnalisisDelClima.Name = "subPanelAnalisisDelClima";
-            subPanelAnalisisDelClima.Size = new Size(250, 112);
+            subPanelAnalisisDelClima.Size = new Size(250, 106);
             subPanelAnalisisDelClima.TabIndex = 5;
             // 
             // btAnalisisClima30diass
@@ -222,7 +224,7 @@
             btAnalisisdelClima.Dock = DockStyle.Top;
             btAnalisisdelClima.FlatAppearance.BorderSize = 0;
             btAnalisisdelClima.FlatStyle = FlatStyle.Flat;
-            btAnalisisdelClima.Location = new Point(0, 397);
+            btAnalisisdelClima.Location = new Point(0, 379);
             btAnalisisdelClima.Name = "btAnalisisdelClima";
             btAnalisisdelClima.Padding = new Padding(10, 0, 0, 0);
             btAnalisisdelClima.Size = new Size(250, 40);
@@ -239,9 +241,9 @@
             subPanelAgendayCalendario.Controls.Add(btRecordatorio);
             subPanelAgendayCalendario.Controls.Add(btTareasPendientes);
             subPanelAgendayCalendario.Dock = DockStyle.Top;
-            subPanelAgendayCalendario.Location = new Point(0, 285);
+            subPanelAgendayCalendario.Location = new Point(0, 273);
             subPanelAgendayCalendario.Name = "subPanelAgendayCalendario";
-            subPanelAgendayCalendario.Size = new Size(250, 112);
+            subPanelAgendayCalendario.Size = new Size(250, 106);
             subPanelAgendayCalendario.TabIndex = 3;
             // 
             // btCalendario
@@ -301,7 +303,7 @@
             btAgendayCalendario.Dock = DockStyle.Top;
             btAgendayCalendario.FlatAppearance.BorderSize = 0;
             btAgendayCalendario.FlatStyle = FlatStyle.Flat;
-            btAgendayCalendario.Location = new Point(0, 245);
+            btAgendayCalendario.Location = new Point(0, 233);
             btAgendayCalendario.Name = "btAgendayCalendario";
             btAgendayCalendario.Padding = new Padding(10, 0, 0, 0);
             btAgendayCalendario.Size = new Size(250, 40);
@@ -319,7 +321,7 @@
             subPanelAlmacenes.Dock = DockStyle.Top;
             subPanelAlmacenes.Location = new Point(0, 165);
             subPanelAlmacenes.Name = "subPanelAlmacenes";
-            subPanelAlmacenes.Size = new Size(250, 80);
+            subPanelAlmacenes.Size = new Size(250, 68);
             subPanelAlmacenes.TabIndex = 1;
             // 
             // btGestionarAlmacenes
@@ -381,11 +383,22 @@
             panel2.Size = new Size(250, 125);
             panel2.TabIndex = 1;
             // 
+            // ChildrenForm
+            // 
+            ChildrenForm.BackColor = SystemColors.ActiveCaption;
+            ChildrenForm.Dock = DockStyle.Fill;
+            ChildrenForm.Location = new Point(250, 0);
+            ChildrenForm.Name = "ChildrenForm";
+            ChildrenForm.Size = new Size(864, 674);
+            ChildrenForm.TabIndex = 1;
+            ChildrenForm.Paint += ChildrenForm_Paint;
+            // 
             // principal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(950, 850);
+            ClientSize = new Size(1114, 674);
+            Controls.Add(ChildrenForm);
             Controls.Add(panel1);
             Name = "principal";
             Text = "principal";
@@ -421,5 +434,6 @@
         private Button btTareasPendientes;
         private Button btAgendayCalendario;
         private Panel panel2;
+        private Panel ChildrenForm;
     }
 }
