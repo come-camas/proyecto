@@ -60,7 +60,7 @@
             // panel1
             // 
             panel1.AutoScroll = true;
-            panel1.BackColor = Color.FromArgb(64, 64, 64);
+            panel1.BackColor = Color.CadetBlue;
             panel1.Controls.Add(btCerrarSesion);
             panel1.Controls.Add(subPanelParcelas);
             panel1.Controls.Add(btParcelas);
@@ -74,16 +74,18 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 674);
+            panel1.Size = new Size(250, 711);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint_1;
             // 
             // btCerrarSesion
             // 
-            btCerrarSesion.BackColor = Color.FromArgb(192, 255, 192);
+            btCerrarSesion.BackColor = Color.DarkCyan;
             btCerrarSesion.Dock = DockStyle.Top;
             btCerrarSesion.FlatAppearance.BorderSize = 0;
             btCerrarSesion.FlatStyle = FlatStyle.Flat;
+            btCerrarSesion.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            btCerrarSesion.ForeColor = SystemColors.ButtonFace;
             btCerrarSesion.Location = new Point(0, 633);
             btCerrarSesion.Name = "btCerrarSesion";
             btCerrarSesion.Padding = new Padding(10, 0, 0, 0);
@@ -107,10 +109,11 @@
             // 
             // btGestionarParcelas
             // 
-            btGestionarParcelas.BackColor = Color.Green;
+            btGestionarParcelas.BackColor = Color.CadetBlue;
             btGestionarParcelas.Dock = DockStyle.Top;
             btGestionarParcelas.FlatAppearance.BorderSize = 0;
             btGestionarParcelas.FlatStyle = FlatStyle.Flat;
+            btGestionarParcelas.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btGestionarParcelas.ForeColor = SystemColors.ButtonHighlight;
             btGestionarParcelas.Location = new Point(0, 35);
             btGestionarParcelas.Name = "btGestionarParcelas";
@@ -124,10 +127,11 @@
             // 
             // btVerParcelas
             // 
-            btVerParcelas.BackColor = Color.Green;
+            btVerParcelas.BackColor = Color.CadetBlue;
             btVerParcelas.Dock = DockStyle.Top;
             btVerParcelas.FlatAppearance.BorderSize = 0;
             btVerParcelas.FlatStyle = FlatStyle.Flat;
+            btVerParcelas.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btVerParcelas.ForeColor = SystemColors.ButtonHighlight;
             btVerParcelas.Location = new Point(0, 0);
             btVerParcelas.Name = "btVerParcelas";
@@ -141,10 +145,12 @@
             // 
             // btParcelas
             // 
-            btParcelas.BackColor = Color.FromArgb(192, 255, 192);
+            btParcelas.BackColor = Color.DarkCyan;
             btParcelas.Dock = DockStyle.Top;
             btParcelas.FlatAppearance.BorderSize = 0;
             btParcelas.FlatStyle = FlatStyle.Flat;
+            btParcelas.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            btParcelas.ForeColor = SystemColors.ButtonFace;
             btParcelas.Location = new Point(0, 525);
             btParcelas.Name = "btParcelas";
             btParcelas.Padding = new Padding(10, 0, 0, 0);
@@ -169,10 +175,11 @@
             // 
             // btAnalisisClima30diass
             // 
-            btAnalisisClima30diass.BackColor = Color.Green;
+            btAnalisisClima30diass.BackColor = Color.CadetBlue;
             btAnalisisClima30diass.Dock = DockStyle.Top;
             btAnalisisClima30diass.FlatAppearance.BorderSize = 0;
             btAnalisisClima30diass.FlatStyle = FlatStyle.Flat;
+            btAnalisisClima30diass.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btAnalisisClima30diass.ForeColor = SystemColors.ButtonHighlight;
             btAnalisisClima30diass.Location = new Point(0, 70);
             btAnalisisClima30diass.Name = "btAnalisisClima30diass";
@@ -186,10 +193,11 @@
             // 
             // btAnalisisClima15dias
             // 
-            btAnalisisClima15dias.BackColor = Color.Green;
+            btAnalisisClima15dias.BackColor = Color.CadetBlue;
             btAnalisisClima15dias.Dock = DockStyle.Top;
             btAnalisisClima15dias.FlatAppearance.BorderSize = 0;
             btAnalisisClima15dias.FlatStyle = FlatStyle.Flat;
+            btAnalisisClima15dias.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btAnalisisClima15dias.ForeColor = SystemColors.ButtonHighlight;
             btAnalisisClima15dias.Location = new Point(0, 35);
             btAnalisisClima15dias.Name = "btAnalisisClima15dias";
@@ -203,10 +211,11 @@
             // 
             // btAnalisisClimaHoy
             // 
-            btAnalisisClimaHoy.BackColor = Color.Green;
+            btAnalisisClimaHoy.BackColor = Color.CadetBlue;
             btAnalisisClimaHoy.Dock = DockStyle.Top;
             btAnalisisClimaHoy.FlatAppearance.BorderSize = 0;
             btAnalisisClimaHoy.FlatStyle = FlatStyle.Flat;
+            btAnalisisClimaHoy.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btAnalisisClimaHoy.ForeColor = SystemColors.ButtonHighlight;
             btAnalisisClimaHoy.Location = new Point(0, 0);
             btAnalisisClimaHoy.Name = "btAnalisisClimaHoy";
@@ -220,10 +229,12 @@
             // 
             // btAnalisisdelClima
             // 
-            btAnalisisdelClima.BackColor = Color.FromArgb(192, 255, 192);
+            btAnalisisdelClima.BackColor = Color.DarkCyan;
             btAnalisisdelClima.Dock = DockStyle.Top;
             btAnalisisdelClima.FlatAppearance.BorderSize = 0;
             btAnalisisdelClima.FlatStyle = FlatStyle.Flat;
+            btAnalisisdelClima.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            btAnalisisdelClima.ForeColor = SystemColors.ButtonFace;
             btAnalisisdelClima.Location = new Point(0, 379);
             btAnalisisdelClima.Name = "btAnalisisdelClima";
             btAnalisisdelClima.Padding = new Padding(10, 0, 0, 0);
@@ -248,10 +259,11 @@
             // 
             // btCalendario
             // 
-            btCalendario.BackColor = Color.Green;
+            btCalendario.BackColor = Color.CadetBlue;
             btCalendario.Dock = DockStyle.Top;
             btCalendario.FlatAppearance.BorderSize = 0;
             btCalendario.FlatStyle = FlatStyle.Flat;
+            btCalendario.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btCalendario.ForeColor = SystemColors.ButtonHighlight;
             btCalendario.Location = new Point(0, 70);
             btCalendario.Name = "btCalendario";
@@ -265,10 +277,11 @@
             // 
             // btRecordatorio
             // 
-            btRecordatorio.BackColor = Color.Green;
+            btRecordatorio.BackColor = Color.CadetBlue;
             btRecordatorio.Dock = DockStyle.Top;
             btRecordatorio.FlatAppearance.BorderSize = 0;
             btRecordatorio.FlatStyle = FlatStyle.Flat;
+            btRecordatorio.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btRecordatorio.ForeColor = SystemColors.ButtonHighlight;
             btRecordatorio.Location = new Point(0, 35);
             btRecordatorio.Name = "btRecordatorio";
@@ -282,10 +295,11 @@
             // 
             // btTareasPendientes
             // 
-            btTareasPendientes.BackColor = Color.Green;
+            btTareasPendientes.BackColor = Color.CadetBlue;
             btTareasPendientes.Dock = DockStyle.Top;
             btTareasPendientes.FlatAppearance.BorderSize = 0;
             btTareasPendientes.FlatStyle = FlatStyle.Flat;
+            btTareasPendientes.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btTareasPendientes.ForeColor = SystemColors.ButtonHighlight;
             btTareasPendientes.Location = new Point(0, 0);
             btTareasPendientes.Name = "btTareasPendientes";
@@ -299,10 +313,12 @@
             // 
             // btAgendayCalendario
             // 
-            btAgendayCalendario.BackColor = Color.FromArgb(192, 255, 192);
+            btAgendayCalendario.BackColor = Color.DarkCyan;
             btAgendayCalendario.Dock = DockStyle.Top;
             btAgendayCalendario.FlatAppearance.BorderSize = 0;
             btAgendayCalendario.FlatStyle = FlatStyle.Flat;
+            btAgendayCalendario.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            btAgendayCalendario.ForeColor = SystemColors.ButtonFace;
             btAgendayCalendario.Location = new Point(0, 233);
             btAgendayCalendario.Name = "btAgendayCalendario";
             btAgendayCalendario.Padding = new Padding(10, 0, 0, 0);
@@ -326,10 +342,11 @@
             // 
             // btGestionarAlmacenes
             // 
-            btGestionarAlmacenes.BackColor = Color.Green;
+            btGestionarAlmacenes.BackColor = Color.CadetBlue;
             btGestionarAlmacenes.Dock = DockStyle.Top;
             btGestionarAlmacenes.FlatAppearance.BorderSize = 0;
             btGestionarAlmacenes.FlatStyle = FlatStyle.Flat;
+            btGestionarAlmacenes.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btGestionarAlmacenes.ForeColor = SystemColors.ButtonHighlight;
             btGestionarAlmacenes.Location = new Point(0, 35);
             btGestionarAlmacenes.Name = "btGestionarAlmacenes";
@@ -343,10 +360,11 @@
             // 
             // btVerAlmacenes
             // 
-            btVerAlmacenes.BackColor = Color.Green;
+            btVerAlmacenes.BackColor = Color.CadetBlue;
             btVerAlmacenes.Dock = DockStyle.Top;
             btVerAlmacenes.FlatAppearance.BorderSize = 0;
             btVerAlmacenes.FlatStyle = FlatStyle.Flat;
+            btVerAlmacenes.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btVerAlmacenes.ForeColor = SystemColors.ButtonHighlight;
             btVerAlmacenes.Location = new Point(0, 0);
             btVerAlmacenes.Name = "btVerAlmacenes";
@@ -360,10 +378,12 @@
             // 
             // btAlmacenes
             // 
-            btAlmacenes.BackColor = Color.FromArgb(192, 255, 192);
+            btAlmacenes.BackColor = Color.DarkCyan;
             btAlmacenes.Dock = DockStyle.Top;
             btAlmacenes.FlatAppearance.BorderSize = 0;
             btAlmacenes.FlatStyle = FlatStyle.Flat;
+            btAlmacenes.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            btAlmacenes.ForeColor = SystemColors.ButtonFace;
             btAlmacenes.Location = new Point(0, 125);
             btAlmacenes.Name = "btAlmacenes";
             btAlmacenes.Padding = new Padding(10, 0, 0, 0);
@@ -376,7 +396,7 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.Black;
+            panel2.BackColor = Color.CadetBlue;
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
@@ -385,11 +405,11 @@
             // 
             // ChildrenForm
             // 
-            ChildrenForm.BackColor = SystemColors.ActiveCaption;
+            ChildrenForm.BackColor = Color.DarkSlateGray;
             ChildrenForm.Dock = DockStyle.Fill;
             ChildrenForm.Location = new Point(250, 0);
             ChildrenForm.Name = "ChildrenForm";
-            ChildrenForm.Size = new Size(864, 674);
+            ChildrenForm.Size = new Size(864, 711);
             ChildrenForm.TabIndex = 1;
             ChildrenForm.Paint += ChildrenForm_Paint;
             // 
@@ -397,7 +417,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1114, 674);
+            ClientSize = new Size(1114, 711);
             Controls.Add(ChildrenForm);
             Controls.Add(panel1);
             Name = "principal";

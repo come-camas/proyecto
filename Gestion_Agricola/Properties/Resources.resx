@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="login-avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login-avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="toji-fushiguro-21946442" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toji-fushiguro-21946442.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stock-vector-lgbtq-pride-heart-heart-shape-with-lgbt-progress-pride-rainbow-flag-pattern-2144873177" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stock-vector-lgbtq-pride-heart-heart-shape-with-lgbt-progress-pride-rainbow-flag-pattern-2144873177.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,13 +127,19 @@
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="login-avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="817bf11558e67bc33cdf166c97a889e4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\817bf11558e67bc33cdf166c97a889e4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="toji-fushiguro-21946442" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\toji-fushiguro-21946442.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="lgbt-pride-month-celebrated-annual-lgbt-rainbow-pride-day-abstract-logo-human-rights-and-tolerance-lesbian-gay-bisexual-transgender-icon-free-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lgbt-pride-month-celebrated-annual-lgbt-rainbow-pride-day-abstract-logo-human-rights-and-tolerance-lesbian-gay-bisexual-transgender-icon-free-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="817bf11558e67bc33cdf166c97a889e41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\817bf11558e67bc33cdf166c97a889e41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

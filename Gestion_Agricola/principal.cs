@@ -164,7 +164,7 @@ namespace Gestion_Agricola
 
         private void btParcelas_Click(object sender, EventArgs e)
         {
-            
+
             MostrarSubmenu(subPanelParcelas);
         }
 
@@ -197,22 +197,27 @@ namespace Gestion_Agricola
         private void AbrirFormHijo(Form hijo)
         {
             if (activeForm != null)
-            
+
                 activeForm.Close();
-                activeForm = hijo;
-                hijo.TopLevel = false;
-                hijo.FormBorderStyle = FormBorderStyle.None;
-                hijo.Dock = DockStyle.Fill;
-                ChildrenForm.Controls.Add(hijo);
-                ChildrenForm.Tag = hijo;
-                hijo.BringToFront();
-                hijo.Show();
-            
+            activeForm = hijo;
+            hijo.TopLevel = false;
+            hijo.FormBorderStyle = FormBorderStyle.None;
+            hijo.Dock = DockStyle.Fill;
+            ChildrenForm.Controls.Add(hijo);
+            ChildrenForm.Tag = hijo;
+            hijo.BringToFront();
+            hijo.Show();
+
         }
 
         private void ChildrenForm_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
