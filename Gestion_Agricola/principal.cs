@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Gestion_Agricola
 {
-    public partial class principal : MaterialSkin.Controls.MaterialForm
+    public partial class principal : Form
     {
         public principal()
         {
@@ -20,10 +20,15 @@ namespace Gestion_Agricola
 
         private void principal_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
