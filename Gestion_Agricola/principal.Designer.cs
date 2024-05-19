@@ -90,6 +90,8 @@
             btCerrarSesion.FlatStyle = FlatStyle.Flat;
             btCerrarSesion.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btCerrarSesion.ForeColor = SystemColors.ButtonFace;
+            btCerrarSesion.Image = (Image)resources.GetObject("btCerrarSesion.Image");
+            btCerrarSesion.ImageAlign = ContentAlignment.MiddleRight;
             btCerrarSesion.Location = new Point(0, 633);
             btCerrarSesion.Name = "btCerrarSesion";
             btCerrarSesion.Padding = new Padding(10, 0, 0, 0);
@@ -119,9 +121,11 @@
             btGestionarParcelas.FlatStyle = FlatStyle.Flat;
             btGestionarParcelas.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btGestionarParcelas.ForeColor = SystemColors.ButtonHighlight;
+            btGestionarParcelas.Image = (Image)resources.GetObject("btGestionarParcelas.Image");
+            btGestionarParcelas.ImageAlign = ContentAlignment.MiddleRight;
             btGestionarParcelas.Location = new Point(0, 35);
             btGestionarParcelas.Name = "btGestionarParcelas";
-            btGestionarParcelas.Padding = new Padding(35, 0, 0, 0);
+            btGestionarParcelas.Padding = new Padding(30, 0, 0, 0);
             btGestionarParcelas.Size = new Size(250, 35);
             btGestionarParcelas.TabIndex = 2;
             btGestionarParcelas.Text = "Gestionar Parcelas";
@@ -137,9 +141,11 @@
             btVerParcelas.FlatStyle = FlatStyle.Flat;
             btVerParcelas.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btVerParcelas.ForeColor = SystemColors.ButtonHighlight;
+            btVerParcelas.Image = (Image)resources.GetObject("btVerParcelas.Image");
+            btVerParcelas.ImageAlign = ContentAlignment.MiddleRight;
             btVerParcelas.Location = new Point(0, 0);
             btVerParcelas.Name = "btVerParcelas";
-            btVerParcelas.Padding = new Padding(35, 0, 0, 0);
+            btVerParcelas.Padding = new Padding(30, 0, 0, 0);
             btVerParcelas.Size = new Size(250, 35);
             btVerParcelas.TabIndex = 1;
             btVerParcelas.Text = "Ver Parcelas";
@@ -155,6 +161,8 @@
             btParcelas.FlatStyle = FlatStyle.Flat;
             btParcelas.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btParcelas.ForeColor = SystemColors.ButtonFace;
+            btParcelas.Image = (Image)resources.GetObject("btParcelas.Image");
+            btParcelas.ImageAlign = ContentAlignment.MiddleRight;
             btParcelas.Location = new Point(0, 525);
             btParcelas.Name = "btParcelas";
             btParcelas.Padding = new Padding(10, 0, 0, 0);
@@ -185,9 +193,10 @@
             btAnalisisClima30diass.FlatStyle = FlatStyle.Flat;
             btAnalisisClima30diass.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btAnalisisClima30diass.ForeColor = SystemColors.ButtonHighlight;
+            btAnalisisClima30diass.ImageAlign = ContentAlignment.MiddleRight;
             btAnalisisClima30diass.Location = new Point(0, 70);
             btAnalisisClima30diass.Name = "btAnalisisClima30diass";
-            btAnalisisClima30diass.Padding = new Padding(35, 0, 0, 0);
+            btAnalisisClima30diass.Padding = new Padding(30, 0, 0, 0);
             btAnalisisClima30diass.Size = new Size(250, 35);
             btAnalisisClima30diass.TabIndex = 3;
             btAnalisisClima30diass.Text = "Analisis  en 30 dias";
@@ -203,9 +212,10 @@
             btAnalisisClima15dias.FlatStyle = FlatStyle.Flat;
             btAnalisisClima15dias.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btAnalisisClima15dias.ForeColor = SystemColors.ButtonHighlight;
+            btAnalisisClima15dias.ImageAlign = ContentAlignment.MiddleRight;
             btAnalisisClima15dias.Location = new Point(0, 35);
             btAnalisisClima15dias.Name = "btAnalisisClima15dias";
-            btAnalisisClima15dias.Padding = new Padding(35, 0, 0, 0);
+            btAnalisisClima15dias.Padding = new Padding(30, 0, 0, 0);
             btAnalisisClima15dias.Size = new Size(250, 35);
             btAnalisisClima15dias.TabIndex = 2;
             btAnalisisClima15dias.Text = "Analisis en 15 dias";
@@ -221,9 +231,11 @@
             btAnalisisClimaHoy.FlatStyle = FlatStyle.Flat;
             btAnalisisClimaHoy.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btAnalisisClimaHoy.ForeColor = SystemColors.ButtonHighlight;
+            btAnalisisClimaHoy.Image = (Image)resources.GetObject("btAnalisisClimaHoy.Image");
+            btAnalisisClimaHoy.ImageAlign = ContentAlignment.MiddleRight;
             btAnalisisClimaHoy.Location = new Point(0, 0);
             btAnalisisClimaHoy.Name = "btAnalisisClimaHoy";
-            btAnalisisClimaHoy.Padding = new Padding(35, 0, 0, 0);
+            btAnalisisClimaHoy.Padding = new Padding(30, 0, 0, 0);
             btAnalisisClimaHoy.Size = new Size(250, 35);
             btAnalisisClimaHoy.TabIndex = 1;
             btAnalisisClimaHoy.Text = "Analisis de hoy";
@@ -239,6 +251,8 @@
             btAnalisisdelClima.FlatStyle = FlatStyle.Flat;
             btAnalisisdelClima.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btAnalisisdelClima.ForeColor = SystemColors.ButtonFace;
+            btAnalisisdelClima.Image = (Image)resources.GetObject("btAnalisisdelClima.Image");
+            btAnalisisdelClima.ImageAlign = ContentAlignment.MiddleRight;
             btAnalisisdelClima.Location = new Point(0, 379);
             btAnalisisdelClima.Name = "btAnalisisdelClima";
             btAnalisisdelClima.Padding = new Padding(10, 0, 0, 0);
@@ -269,9 +283,11 @@
             btCalendario.FlatStyle = FlatStyle.Flat;
             btCalendario.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btCalendario.ForeColor = SystemColors.ButtonHighlight;
+            btCalendario.Image = (Image)resources.GetObject("btCalendario.Image");
+            btCalendario.ImageAlign = ContentAlignment.MiddleRight;
             btCalendario.Location = new Point(0, 70);
             btCalendario.Name = "btCalendario";
-            btCalendario.Padding = new Padding(35, 0, 0, 0);
+            btCalendario.Padding = new Padding(30, 0, 0, 0);
             btCalendario.Size = new Size(250, 35);
             btCalendario.TabIndex = 3;
             btCalendario.Text = "Calendario";
@@ -287,9 +303,11 @@
             btRecordatorio.FlatStyle = FlatStyle.Flat;
             btRecordatorio.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btRecordatorio.ForeColor = SystemColors.ButtonHighlight;
+            btRecordatorio.Image = (Image)resources.GetObject("btRecordatorio.Image");
+            btRecordatorio.ImageAlign = ContentAlignment.MiddleRight;
             btRecordatorio.Location = new Point(0, 35);
             btRecordatorio.Name = "btRecordatorio";
-            btRecordatorio.Padding = new Padding(35, 0, 0, 0);
+            btRecordatorio.Padding = new Padding(30, 0, 0, 0);
             btRecordatorio.Size = new Size(250, 35);
             btRecordatorio.TabIndex = 2;
             btRecordatorio.Text = "Recordatorio";
@@ -305,9 +323,11 @@
             btTareasPendientes.FlatStyle = FlatStyle.Flat;
             btTareasPendientes.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btTareasPendientes.ForeColor = SystemColors.ButtonHighlight;
+            btTareasPendientes.Image = (Image)resources.GetObject("btTareasPendientes.Image");
+            btTareasPendientes.ImageAlign = ContentAlignment.MiddleRight;
             btTareasPendientes.Location = new Point(0, 0);
             btTareasPendientes.Name = "btTareasPendientes";
-            btTareasPendientes.Padding = new Padding(35, 0, 0, 0);
+            btTareasPendientes.Padding = new Padding(30, 0, 0, 0);
             btTareasPendientes.Size = new Size(250, 35);
             btTareasPendientes.TabIndex = 1;
             btTareasPendientes.Text = "Tareas Pendientes";
@@ -323,9 +343,10 @@
             btAgendayCalendario.FlatStyle = FlatStyle.Flat;
             btAgendayCalendario.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btAgendayCalendario.ForeColor = SystemColors.ButtonFace;
+            btAgendayCalendario.Image = (Image)resources.GetObject("btAgendayCalendario.Image");
+            btAgendayCalendario.ImageAlign = ContentAlignment.MiddleRight;
             btAgendayCalendario.Location = new Point(0, 233);
             btAgendayCalendario.Name = "btAgendayCalendario";
-            btAgendayCalendario.Padding = new Padding(10, 0, 0, 0);
             btAgendayCalendario.Size = new Size(250, 40);
             btAgendayCalendario.TabIndex = 2;
             btAgendayCalendario.Text = "Agenda y Calendario";
@@ -352,9 +373,11 @@
             btGestionarAlmacenes.FlatStyle = FlatStyle.Flat;
             btGestionarAlmacenes.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btGestionarAlmacenes.ForeColor = SystemColors.ButtonHighlight;
+            btGestionarAlmacenes.Image = (Image)resources.GetObject("btGestionarAlmacenes.Image");
+            btGestionarAlmacenes.ImageAlign = ContentAlignment.MiddleRight;
             btGestionarAlmacenes.Location = new Point(0, 35);
             btGestionarAlmacenes.Name = "btGestionarAlmacenes";
-            btGestionarAlmacenes.Padding = new Padding(35, 0, 0, 0);
+            btGestionarAlmacenes.Padding = new Padding(30, 0, 0, 0);
             btGestionarAlmacenes.Size = new Size(250, 35);
             btGestionarAlmacenes.TabIndex = 2;
             btGestionarAlmacenes.Text = "Gestionar Almacenes";
@@ -370,9 +393,11 @@
             btVerAlmacenes.FlatStyle = FlatStyle.Flat;
             btVerAlmacenes.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btVerAlmacenes.ForeColor = SystemColors.ButtonHighlight;
+            btVerAlmacenes.Image = (Image)resources.GetObject("btVerAlmacenes.Image");
+            btVerAlmacenes.ImageAlign = ContentAlignment.MiddleRight;
             btVerAlmacenes.Location = new Point(0, 0);
             btVerAlmacenes.Name = "btVerAlmacenes";
-            btVerAlmacenes.Padding = new Padding(35, 0, 0, 0);
+            btVerAlmacenes.Padding = new Padding(30, 0, 0, 0);
             btVerAlmacenes.Size = new Size(250, 35);
             btVerAlmacenes.TabIndex = 1;
             btVerAlmacenes.Text = "Ver Almacenes";
@@ -388,6 +413,8 @@
             btAlmacenes.FlatStyle = FlatStyle.Flat;
             btAlmacenes.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
             btAlmacenes.ForeColor = SystemColors.ButtonFace;
+            btAlmacenes.Image = (Image)resources.GetObject("btAlmacenes.Image");
+            btAlmacenes.ImageAlign = ContentAlignment.MiddleRight;
             btAlmacenes.Location = new Point(0, 125);
             btAlmacenes.Name = "btAlmacenes";
             btAlmacenes.Padding = new Padding(10, 0, 0, 0);
@@ -421,12 +448,13 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(191, 200);
+            pictureBox1.Location = new Point(207, 189);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(434, 313);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
+            pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // principal
             // 

@@ -49,3 +49,4 @@ C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Analisis_15Dias.resources
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Analisis_30Dias.resources
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Analisis_Hoy.resources
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Form_Administracion.resources

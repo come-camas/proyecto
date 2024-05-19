@@ -12,6 +12,7 @@ namespace Gestion_Agricola
 {
     public partial class VerAlmacenes : Form
     {
+        public string ruta=Directory.GetCurrentDirectory();
         public VerAlmacenes()
         {
             InitializeComponent();
@@ -25,6 +26,10 @@ namespace Gestion_Agricola
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
         }
     }
 }
