@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(principal));
             panel1 = new Panel();
             btCerrarSesion = new Button();
             subPanelParcelas = new Panel();
@@ -50,11 +51,14 @@
             btAlmacenes = new Button();
             panel2 = new Panel();
             ChildrenForm = new Panel();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             subPanelParcelas.SuspendLayout();
             subPanelAnalisisDelClima.SuspendLayout();
             subPanelAgendayCalendario.SuspendLayout();
             subPanelAlmacenes.SuspendLayout();
+            ChildrenForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -406,12 +410,23 @@
             // ChildrenForm
             // 
             ChildrenForm.BackColor = Color.DarkSlateGray;
+            ChildrenForm.Controls.Add(pictureBox1);
             ChildrenForm.Dock = DockStyle.Fill;
             ChildrenForm.Location = new Point(250, 0);
             ChildrenForm.Name = "ChildrenForm";
             ChildrenForm.Size = new Size(864, 711);
             ChildrenForm.TabIndex = 1;
             ChildrenForm.Paint += ChildrenForm_Paint;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(206, 200);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(434, 313);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // principal
             // 
@@ -428,6 +443,8 @@
             subPanelAnalisisDelClima.ResumeLayout(false);
             subPanelAgendayCalendario.ResumeLayout(false);
             subPanelAlmacenes.ResumeLayout(false);
+            ChildrenForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -455,5 +472,6 @@
         private Button btAgendayCalendario;
         private Panel panel2;
         private Panel ChildrenForm;
+        private PictureBox pictureBox1;
     }
 }
