@@ -1,6 +1,6 @@
 ﻿namespace Gestion_Agricola
 {
-    partial class principal
+    partial class Principal_Prueba
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(principal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal_Prueba));
             panel1 = new Panel();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            panel2 = new Panel();
             btCerrarSesion = new Button();
             subPanelParcelas = new Panel();
             btGestionarParcelas = new Button();
@@ -49,41 +53,91 @@
             btGestionarAlmacenes = new Button();
             btVerAlmacenes = new Button();
             btAlmacenes = new Button();
-            panel2 = new Panel();
-            pictureBox2 = new PictureBox();
+            panel3 = new Panel();
+            pictureBox4 = new PictureBox();
             ChildrenForm = new Panel();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
             subPanelParcelas.SuspendLayout();
             subPanelAnalisisDelClima.SuspendLayout();
             subPanelAgendayCalendario.SuspendLayout();
             subPanelAlmacenes.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ChildrenForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.AutoScroll = true;
-            panel1.BackColor = Color.CadetBlue;
-            panel1.Controls.Add(btCerrarSesion);
-            panel1.Controls.Add(subPanelParcelas);
-            panel1.Controls.Add(btParcelas);
-            panel1.Controls.Add(subPanelAnalisisDelClima);
-            panel1.Controls.Add(btAnalisisdelClima);
-            panel1.Controls.Add(subPanelAgendayCalendario);
-            panel1.Controls.Add(btAgendayCalendario);
-            panel1.Controls.Add(subPanelAlmacenes);
-            panel1.Controls.Add(btAlmacenes);
-            panel1.Controls.Add(panel2);
-            panel1.Dock = DockStyle.Left;
+            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(272, 711);
+            panel1.Size = new Size(1114, 35);
             panel1.TabIndex = 0;
-            panel1.Paint += this.panel1_Paint_1;
+            panel1.Paint += panel1_Paint_1;
+            panel1.MouseDown += panel1_MouseDown;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(1016, 6);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(25, 25);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(1047, 6);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(25, 25);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1078, 6);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(25, 25);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // panel2
+            // 
+            panel2.AutoScroll = true;
+            panel2.BackColor = Color.CadetBlue;
+            panel2.Controls.Add(btCerrarSesion);
+            panel2.Controls.Add(subPanelParcelas);
+            panel2.Controls.Add(btParcelas);
+            panel2.Controls.Add(subPanelAnalisisDelClima);
+            panel2.Controls.Add(btAnalisisdelClima);
+            panel2.Controls.Add(subPanelAgendayCalendario);
+            panel2.Controls.Add(btAgendayCalendario);
+            panel2.Controls.Add(subPanelAlmacenes);
+            panel2.Controls.Add(btAlmacenes);
+            panel2.Controls.Add(panel3);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 35);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(272, 676);
+            panel2.TabIndex = 1;
             // 
             // btCerrarSesion
             // 
@@ -103,7 +157,6 @@
             btCerrarSesion.Text = "Cerrar sesion";
             btCerrarSesion.TextAlign = ContentAlignment.MiddleLeft;
             btCerrarSesion.UseVisualStyleBackColor = false;
-            btCerrarSesion.Click += this.btCerrarSesion_Click;
             // 
             // subPanelParcelas
             // 
@@ -134,7 +187,6 @@
             btGestionarParcelas.Text = "Gestionar Parcelas";
             btGestionarParcelas.TextAlign = ContentAlignment.MiddleLeft;
             btGestionarParcelas.UseVisualStyleBackColor = false;
-            btGestionarParcelas.Click += this.btGestionarParcelas_Click;
             // 
             // btVerParcelas
             // 
@@ -154,7 +206,6 @@
             btVerParcelas.Text = "Ver Parcelas";
             btVerParcelas.TextAlign = ContentAlignment.MiddleLeft;
             btVerParcelas.UseVisualStyleBackColor = false;
-            btVerParcelas.Click += this.btVerParcelas_Click;
             // 
             // btParcelas
             // 
@@ -174,7 +225,7 @@
             btParcelas.Text = "Parcelas";
             btParcelas.TextAlign = ContentAlignment.MiddleLeft;
             btParcelas.UseVisualStyleBackColor = false;
-            btParcelas.Click += this.btParcelas_Click;
+            btParcelas.Click += btParcelas_Click;
             // 
             // subPanelAnalisisDelClima
             // 
@@ -205,7 +256,6 @@
             btAnalisisClima30diass.Text = "Analisis  en 30 dias";
             btAnalisisClima30diass.TextAlign = ContentAlignment.MiddleLeft;
             btAnalisisClima30diass.UseVisualStyleBackColor = false;
-            btAnalisisClima30diass.Click += this.btAnalisisClima30diass_Click;
             // 
             // btAnalisisClima15dias
             // 
@@ -224,7 +274,6 @@
             btAnalisisClima15dias.Text = "Analisis en 15 dias";
             btAnalisisClima15dias.TextAlign = ContentAlignment.MiddleLeft;
             btAnalisisClima15dias.UseVisualStyleBackColor = false;
-            btAnalisisClima15dias.Click += this.btAnalisisClima15dias_Click;
             // 
             // btAnalisisClimaHoy
             // 
@@ -244,7 +293,6 @@
             btAnalisisClimaHoy.Text = "Analisis de hoy";
             btAnalisisClimaHoy.TextAlign = ContentAlignment.MiddleLeft;
             btAnalisisClimaHoy.UseVisualStyleBackColor = false;
-            btAnalisisClimaHoy.Click += this.btAnalisisClimaHoy_Click;
             // 
             // btAnalisisdelClima
             // 
@@ -264,7 +312,7 @@
             btAnalisisdelClima.Text = "Analisis Del Clima";
             btAnalisisdelClima.TextAlign = ContentAlignment.MiddleLeft;
             btAnalisisdelClima.UseVisualStyleBackColor = false;
-            btAnalisisdelClima.Click += this.btAnalisisdelClima_Click;
+            btAnalisisdelClima.Click += btAnalisisdelClima_Click;
             // 
             // subPanelAgendayCalendario
             // 
@@ -296,7 +344,6 @@
             btCalendario.Text = "Calendario";
             btCalendario.TextAlign = ContentAlignment.MiddleLeft;
             btCalendario.UseVisualStyleBackColor = false;
-            btCalendario.Click += this.btCalendario_Click;
             // 
             // btRecordatorio
             // 
@@ -316,7 +363,6 @@
             btRecordatorio.Text = "Recordatorio";
             btRecordatorio.TextAlign = ContentAlignment.MiddleLeft;
             btRecordatorio.UseVisualStyleBackColor = false;
-            btRecordatorio.Click += this.btRecordatorio_Click;
             // 
             // btTareasPendientes
             // 
@@ -336,7 +382,6 @@
             btTareasPendientes.Text = "Tareas Pendientes";
             btTareasPendientes.TextAlign = ContentAlignment.MiddleLeft;
             btTareasPendientes.UseVisualStyleBackColor = false;
-            btTareasPendientes.Click += this.btTareasPendientes_Click;
             // 
             // btAgendayCalendario
             // 
@@ -355,7 +400,7 @@
             btAgendayCalendario.Text = "Agenda y Calendario";
             btAgendayCalendario.TextAlign = ContentAlignment.MiddleLeft;
             btAgendayCalendario.UseVisualStyleBackColor = false;
-            btAgendayCalendario.Click += this.btAgendayCalendario_Click;
+            btAgendayCalendario.Click += btAgendayCalendario_Click;
             // 
             // subPanelAlmacenes
             // 
@@ -386,7 +431,6 @@
             btGestionarAlmacenes.Text = "Gestionar Almacenes";
             btGestionarAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
             btGestionarAlmacenes.UseVisualStyleBackColor = false;
-            btGestionarAlmacenes.Click += this.btGestionarAlmacenes_Click;
             // 
             // btVerAlmacenes
             // 
@@ -406,7 +450,6 @@
             btVerAlmacenes.Text = "Ver Almacenes";
             btVerAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
             btVerAlmacenes.UseVisualStyleBackColor = false;
-            btVerAlmacenes.Click += this.btVerAlmacenes_Click;
             // 
             // btAlmacenes
             // 
@@ -426,80 +469,69 @@
             btAlmacenes.Text = "Almacenes";
             btAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
             btAlmacenes.UseVisualStyleBackColor = false;
-            btAlmacenes.Click += this.btAlmacenes_Click;
+            btAlmacenes.Click += btAlmacenes_Click;
             // 
-            // panel2
+            // panel3
             // 
-            panel2.BackColor = Color.CadetBlue;
-            panel2.Controls.Add(pictureBox2);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(272, 125);
-            panel2.TabIndex = 1;
+            panel3.BackColor = Color.CadetBlue;
+            panel3.Controls.Add(pictureBox4);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(272, 125);
+            panel3.TabIndex = 1;
             // 
-            // pictureBox2
+            // pictureBox4
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(272, 125);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(0, 0);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(272, 125);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
             // 
             // ChildrenForm
             // 
             ChildrenForm.BackColor = Color.DarkSlateGray;
-            ChildrenForm.Controls.Add(pictureBox1);
             ChildrenForm.Dock = DockStyle.Fill;
-            ChildrenForm.Location = new Point(272, 0);
+            ChildrenForm.Location = new Point(272, 35);
             ChildrenForm.Name = "ChildrenForm";
-            ChildrenForm.Size = new Size(842, 711);
-            ChildrenForm.TabIndex = 1;
-            ChildrenForm.Paint += this.ChildrenForm_Paint;
+            ChildrenForm.Size = new Size(842, 676);
+            ChildrenForm.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(207, 189);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(412, 313);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += this.pictureBox1_Click_1;
-            // 
-            // principal
+            // Principal_Prueba
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1114, 711);
             Controls.Add(ChildrenForm);
+            Controls.Add(panel2);
             Controls.Add(panel1);
-            Name = "principal";
-            Text = "principal";
-            Load += this.principal_Load;
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Principal_Prueba";
+            Text = "Principal_Prueba";
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
             subPanelParcelas.ResumeLayout(false);
             subPanelAnalisisDelClima.ResumeLayout(false);
             subPanelAgendayCalendario.ResumeLayout(false);
             subPanelAlmacenes.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ChildrenForm.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private Panel subPanelAlmacenes;
-        private Button btVerAlmacenes;
-        private Button btAlmacenes;
-        private Button btGestionarAlmacenes;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
+        private Panel panel2;
         private Button btCerrarSesion;
         private Panel subPanelParcelas;
         private Button btGestionarParcelas;
@@ -515,9 +547,12 @@
         private Button btRecordatorio;
         private Button btTareasPendientes;
         private Button btAgendayCalendario;
-        private Panel panel2;
+        private Panel subPanelAlmacenes;
+        private Button btGestionarAlmacenes;
+        private Button btVerAlmacenes;
+        private Button btAlmacenes;
+        private Panel panel3;
+        private PictureBox pictureBox4;
         private Panel ChildrenForm;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
     }
 }

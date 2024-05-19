@@ -18,6 +18,7 @@ namespace Gestion_Agricola
             InitializeComponent();
             CustomizarDiseño();
         }
+        
 
         private void principal_Load(object sender, EventArgs e)
         {
