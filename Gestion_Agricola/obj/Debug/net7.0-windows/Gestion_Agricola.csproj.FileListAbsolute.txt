@@ -23,8 +23,6 @@ C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\Gestion_Agricola.runtimeconfig.json
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\Gestion_Agricola.dll
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\Gestion_Agricola.pdb
-C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\MaterialSkin.dll
-C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.csproj.AssemblyReference.cache
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Login.resources
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.principal.resources
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Properties.Resources.resources
@@ -36,7 +34,6 @@ C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.AssemblyInfo.cs
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.sourcelink.json
-C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_.0DC7C0E5.Up2Date
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.dll
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\refint\Gestion_Agricola.dll
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.pdb

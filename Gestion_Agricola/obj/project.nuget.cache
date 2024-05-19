@@ -1,21 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6yLym8I9vGjo1s0+pnzC13p+vz06+Iibqekb34pzpLlqGSwIH788mW8z2m58iIcg0ObC5Y/PqwWne4a6r7WfSw==",
+  "dgSpecHash": "zolSUrosvmH7lRgwlDzQk1Al97XqexhpzVeYXElcHKa7dzScY4LnMThb+3tPDWabgRcIAebZaMCesTh2Im7fwA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\materialskin\\0.2.1\\materialskin.0.2.1.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"MaterialSkin 0.2.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "MaterialSkin",
-      "targetGraphs": [
-        "net7.0-windows7.0"
-      ]
-    }
-  ]
+  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
 }
