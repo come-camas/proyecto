@@ -24,7 +24,6 @@ C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\Gestion_Agricola.dll
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\Gestion_Agricola.pdb
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Login.resources
-C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.principal.resources
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Properties.Resources.resources
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.SubventanaClima.resources
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Ventana_Gerente.resources
@@ -51,3 +50,4 @@ C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Analisis_Hoy.resources
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Form_Administracion.resources
 C:\Users\Usuario\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Principal_Prueba.resources
+C:\Users\Usuario\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Tareas_Pendientes_Crears.resources

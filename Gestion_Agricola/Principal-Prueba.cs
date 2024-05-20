@@ -202,6 +202,7 @@ namespace Gestion_Agricola
         private void btCerrarSesion_Click(object sender, EventArgs e)
         {
             ocultar();
+            Application.Exit(); 
         }
 
         private void timer1_Tick(object sender, EventArgs e)

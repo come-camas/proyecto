@@ -16,5 +16,21 @@ namespace Gestion_Agricola
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Tareas_Pendientes_Crears s = new Tareas_Pendientes_Crears();
+            s.Show();
+        }
+
+        private void Tareas_Pendientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
