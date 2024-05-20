@@ -31,9 +31,6 @@
     <Compile Update="Principal-Prueba.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="principal.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Recordatorio.cs">
       <SubType>Form</SubType>
     </Compile>
