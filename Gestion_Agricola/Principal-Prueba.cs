@@ -22,6 +22,7 @@ namespace Gestion_Agricola
         public Principal_Prueba()
         {
             InitializeComponent();
+            cerrar();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -97,7 +98,7 @@ namespace Gestion_Agricola
         }
         public void MostrarSubmenu(Panel SubMenu)
         {
-            cerrar();
+
             if (SubMenu.Visible == false)
             {
                 ocultar();
@@ -131,11 +132,88 @@ namespace Gestion_Agricola
         }
         public void cerrar()
         {
+            subPanelAlmacenes.Visible = false;
             subPanelParcelas.Visible = false;
             subPanelAgendayCalendario.Visible = false;
             subPanelAnalisisDelClima.Visible = false;
-            subPanelParcelas.Visible=false;
-
+            subPanelParcelas.Visible = false;
         }
+
+        private void btVerAlmacenes_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new VerAlmacenes());
+            ocultar();
+        }
+
+        private void btGestionarAlmacenes_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Gestionar_Almacenes());
+            ocultar();
+        }
+
+        private void btTareasPendientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Tareas_Pendientes());
+            ocultar();
+        }
+
+        private void btRecordatorio_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Recordatorio());
+            ocultar();
+        }
+
+        private void btCalendario_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Calendario());
+            ocultar();
+        }
+
+        private void btAnalisisClimaHoy_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Analisis_Hoy());
+            ocultar();
+        }
+
+        private void btAnalisisClima15dias_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Analisis_15Dias());
+            ocultar();
+        }
+
+        private void btAnalisisClima30diass_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Analisis_30Dias());
+            ocultar();
+        }
+
+        private void btVerParcelas_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Ver_Parcelas());
+            ocultar();
+        }
+
+        private void btGestionarParcelas_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Gestionar_Parcelas());
+            ocultar();
+        }
+
+        private void btCerrarSesion_Click(object sender, EventArgs e)
+        {
+            ocultar();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbhora.Text = DateTime.Now.ToLongTimeString();
+            lbfecha.Text = DateTime.Now.ToShortDateString();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+           Form_Administracion a=new Form_Administracion();
+            a.Show();
+           }
     }
 }

@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal_Prueba));
             panel1 = new Panel();
+            pictureBox5 = new PictureBox();
+            Bt_Nombre_de_Usuario = new Boton_personalizado();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
@@ -56,7 +59,11 @@
             panel3 = new Panel();
             pictureBox4 = new PictureBox();
             ChildrenForm = new Panel();
+            lbfecha = new Label();
+            lbhora = new Label();
+            tmrFecha_Hora = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -67,29 +74,60 @@
             subPanelAlmacenes.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ChildrenForm.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(Bt_Nombre_de_Usuario);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1114, 35);
+            panel1.Size = new Size(1114, 49);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint_1;
             panel1.MouseDown += panel1_MouseDown;
             // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(250, 3);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(48, 40);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 3;
+            pictureBox5.TabStop = false;
+            // 
+            // Bt_Nombre_de_Usuario
+            // 
+            Bt_Nombre_de_Usuario.BackColor = Color.PaleTurquoise;
+            Bt_Nombre_de_Usuario.BackgroundColor = Color.PaleTurquoise;
+            Bt_Nombre_de_Usuario.BorderColor = Color.PaleVioletRed;
+            Bt_Nombre_de_Usuario.BorderRadius = 20;
+            Bt_Nombre_de_Usuario.BorderSize = 0;
+            Bt_Nombre_de_Usuario.FlatAppearance.BorderSize = 0;
+            Bt_Nombre_de_Usuario.FlatStyle = FlatStyle.Flat;
+            Bt_Nombre_de_Usuario.ForeColor = Color.White;
+            Bt_Nombre_de_Usuario.Location = new Point(12, 3);
+            Bt_Nombre_de_Usuario.Name = "Bt_Nombre_de_Usuario";
+            Bt_Nombre_de_Usuario.Size = new Size(232, 43);
+            Bt_Nombre_de_Usuario.TabIndex = 3;
+            Bt_Nombre_de_Usuario.TextColor = Color.White;
+            Bt_Nombre_de_Usuario.UseVisualStyleBackColor = false;
+            // 
             // pictureBox3
             // 
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(1016, 6);
+            pictureBox3.Location = new Point(986, 9);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(25, 25);
+            pictureBox3.Size = new Size(34, 37);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -98,10 +136,11 @@
             // pictureBox2
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1047, 6);
+            pictureBox2.Location = new Point(1028, 9);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(25, 25);
+            pictureBox2.Size = new Size(34, 37);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -110,10 +149,11 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1078, 6);
+            pictureBox1.Location = new Point(1068, 9);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(25, 25);
+            pictureBox1.Size = new Size(34, 37);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -134,9 +174,9 @@
             panel2.Controls.Add(btAlmacenes);
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 35);
+            panel2.Location = new Point(0, 49);
             panel2.Name = "panel2";
-            panel2.Size = new Size(272, 676);
+            panel2.Size = new Size(272, 662);
             panel2.TabIndex = 1;
             // 
             // btCerrarSesion
@@ -152,11 +192,12 @@
             btCerrarSesion.Location = new Point(0, 633);
             btCerrarSesion.Name = "btCerrarSesion";
             btCerrarSesion.Padding = new Padding(10, 0, 0, 0);
-            btCerrarSesion.Size = new Size(272, 40);
+            btCerrarSesion.Size = new Size(251, 40);
             btCerrarSesion.TabIndex = 8;
             btCerrarSesion.Text = "Cerrar sesion";
             btCerrarSesion.TextAlign = ContentAlignment.MiddleLeft;
             btCerrarSesion.UseVisualStyleBackColor = false;
+            btCerrarSesion.Click += btCerrarSesion_Click;
             // 
             // subPanelParcelas
             // 
@@ -166,7 +207,7 @@
             subPanelParcelas.Dock = DockStyle.Top;
             subPanelParcelas.Location = new Point(0, 565);
             subPanelParcelas.Name = "subPanelParcelas";
-            subPanelParcelas.Size = new Size(272, 68);
+            subPanelParcelas.Size = new Size(251, 68);
             subPanelParcelas.TabIndex = 7;
             // 
             // btGestionarParcelas
@@ -182,11 +223,12 @@
             btGestionarParcelas.Location = new Point(0, 35);
             btGestionarParcelas.Name = "btGestionarParcelas";
             btGestionarParcelas.Padding = new Padding(30, 0, 0, 0);
-            btGestionarParcelas.Size = new Size(272, 35);
+            btGestionarParcelas.Size = new Size(251, 35);
             btGestionarParcelas.TabIndex = 2;
             btGestionarParcelas.Text = "Gestionar Parcelas";
             btGestionarParcelas.TextAlign = ContentAlignment.MiddleLeft;
             btGestionarParcelas.UseVisualStyleBackColor = false;
+            btGestionarParcelas.Click += btGestionarParcelas_Click;
             // 
             // btVerParcelas
             // 
@@ -201,11 +243,12 @@
             btVerParcelas.Location = new Point(0, 0);
             btVerParcelas.Name = "btVerParcelas";
             btVerParcelas.Padding = new Padding(30, 0, 0, 0);
-            btVerParcelas.Size = new Size(272, 35);
+            btVerParcelas.Size = new Size(251, 35);
             btVerParcelas.TabIndex = 1;
             btVerParcelas.Text = "Ver Parcelas";
             btVerParcelas.TextAlign = ContentAlignment.MiddleLeft;
             btVerParcelas.UseVisualStyleBackColor = false;
+            btVerParcelas.Click += btVerParcelas_Click;
             // 
             // btParcelas
             // 
@@ -220,7 +263,7 @@
             btParcelas.Location = new Point(0, 525);
             btParcelas.Name = "btParcelas";
             btParcelas.Padding = new Padding(10, 0, 0, 0);
-            btParcelas.Size = new Size(272, 40);
+            btParcelas.Size = new Size(251, 40);
             btParcelas.TabIndex = 6;
             btParcelas.Text = "Parcelas";
             btParcelas.TextAlign = ContentAlignment.MiddleLeft;
@@ -236,7 +279,7 @@
             subPanelAnalisisDelClima.Dock = DockStyle.Top;
             subPanelAnalisisDelClima.Location = new Point(0, 419);
             subPanelAnalisisDelClima.Name = "subPanelAnalisisDelClima";
-            subPanelAnalisisDelClima.Size = new Size(272, 106);
+            subPanelAnalisisDelClima.Size = new Size(251, 106);
             subPanelAnalisisDelClima.TabIndex = 5;
             // 
             // btAnalisisClima30diass
@@ -251,11 +294,12 @@
             btAnalisisClima30diass.Location = new Point(0, 70);
             btAnalisisClima30diass.Name = "btAnalisisClima30diass";
             btAnalisisClima30diass.Padding = new Padding(30, 0, 0, 0);
-            btAnalisisClima30diass.Size = new Size(272, 35);
+            btAnalisisClima30diass.Size = new Size(251, 35);
             btAnalisisClima30diass.TabIndex = 3;
             btAnalisisClima30diass.Text = "Analisis  en 30 dias";
             btAnalisisClima30diass.TextAlign = ContentAlignment.MiddleLeft;
             btAnalisisClima30diass.UseVisualStyleBackColor = false;
+            btAnalisisClima30diass.Click += btAnalisisClima30diass_Click;
             // 
             // btAnalisisClima15dias
             // 
@@ -269,11 +313,12 @@
             btAnalisisClima15dias.Location = new Point(0, 35);
             btAnalisisClima15dias.Name = "btAnalisisClima15dias";
             btAnalisisClima15dias.Padding = new Padding(30, 0, 0, 0);
-            btAnalisisClima15dias.Size = new Size(272, 35);
+            btAnalisisClima15dias.Size = new Size(251, 35);
             btAnalisisClima15dias.TabIndex = 2;
             btAnalisisClima15dias.Text = "Analisis en 15 dias";
             btAnalisisClima15dias.TextAlign = ContentAlignment.MiddleLeft;
             btAnalisisClima15dias.UseVisualStyleBackColor = false;
+            btAnalisisClima15dias.Click += btAnalisisClima15dias_Click;
             // 
             // btAnalisisClimaHoy
             // 
@@ -288,11 +333,12 @@
             btAnalisisClimaHoy.Location = new Point(0, 0);
             btAnalisisClimaHoy.Name = "btAnalisisClimaHoy";
             btAnalisisClimaHoy.Padding = new Padding(30, 0, 0, 0);
-            btAnalisisClimaHoy.Size = new Size(272, 35);
+            btAnalisisClimaHoy.Size = new Size(251, 35);
             btAnalisisClimaHoy.TabIndex = 1;
             btAnalisisClimaHoy.Text = "Analisis de hoy";
             btAnalisisClimaHoy.TextAlign = ContentAlignment.MiddleLeft;
             btAnalisisClimaHoy.UseVisualStyleBackColor = false;
+            btAnalisisClimaHoy.Click += btAnalisisClimaHoy_Click;
             // 
             // btAnalisisdelClima
             // 
@@ -307,7 +353,7 @@
             btAnalisisdelClima.Location = new Point(0, 379);
             btAnalisisdelClima.Name = "btAnalisisdelClima";
             btAnalisisdelClima.Padding = new Padding(10, 0, 0, 0);
-            btAnalisisdelClima.Size = new Size(272, 40);
+            btAnalisisdelClima.Size = new Size(251, 40);
             btAnalisisdelClima.TabIndex = 4;
             btAnalisisdelClima.Text = "Analisis Del Clima";
             btAnalisisdelClima.TextAlign = ContentAlignment.MiddleLeft;
@@ -323,7 +369,7 @@
             subPanelAgendayCalendario.Dock = DockStyle.Top;
             subPanelAgendayCalendario.Location = new Point(0, 273);
             subPanelAgendayCalendario.Name = "subPanelAgendayCalendario";
-            subPanelAgendayCalendario.Size = new Size(272, 106);
+            subPanelAgendayCalendario.Size = new Size(251, 106);
             subPanelAgendayCalendario.TabIndex = 3;
             // 
             // btCalendario
@@ -339,11 +385,12 @@
             btCalendario.Location = new Point(0, 70);
             btCalendario.Name = "btCalendario";
             btCalendario.Padding = new Padding(30, 0, 0, 0);
-            btCalendario.Size = new Size(272, 35);
+            btCalendario.Size = new Size(251, 35);
             btCalendario.TabIndex = 3;
             btCalendario.Text = "Calendario";
             btCalendario.TextAlign = ContentAlignment.MiddleLeft;
             btCalendario.UseVisualStyleBackColor = false;
+            btCalendario.Click += btCalendario_Click;
             // 
             // btRecordatorio
             // 
@@ -358,11 +405,12 @@
             btRecordatorio.Location = new Point(0, 35);
             btRecordatorio.Name = "btRecordatorio";
             btRecordatorio.Padding = new Padding(30, 0, 0, 0);
-            btRecordatorio.Size = new Size(272, 35);
+            btRecordatorio.Size = new Size(251, 35);
             btRecordatorio.TabIndex = 2;
             btRecordatorio.Text = "Recordatorio";
             btRecordatorio.TextAlign = ContentAlignment.MiddleLeft;
             btRecordatorio.UseVisualStyleBackColor = false;
+            btRecordatorio.Click += btRecordatorio_Click;
             // 
             // btTareasPendientes
             // 
@@ -377,11 +425,12 @@
             btTareasPendientes.Location = new Point(0, 0);
             btTareasPendientes.Name = "btTareasPendientes";
             btTareasPendientes.Padding = new Padding(30, 0, 0, 0);
-            btTareasPendientes.Size = new Size(272, 35);
+            btTareasPendientes.Size = new Size(251, 35);
             btTareasPendientes.TabIndex = 1;
             btTareasPendientes.Text = "Tareas Pendientes";
             btTareasPendientes.TextAlign = ContentAlignment.MiddleLeft;
             btTareasPendientes.UseVisualStyleBackColor = false;
+            btTareasPendientes.Click += btTareasPendientes_Click;
             // 
             // btAgendayCalendario
             // 
@@ -395,7 +444,7 @@
             btAgendayCalendario.ImageAlign = ContentAlignment.MiddleRight;
             btAgendayCalendario.Location = new Point(0, 233);
             btAgendayCalendario.Name = "btAgendayCalendario";
-            btAgendayCalendario.Size = new Size(272, 40);
+            btAgendayCalendario.Size = new Size(251, 40);
             btAgendayCalendario.TabIndex = 2;
             btAgendayCalendario.Text = "Agenda y Calendario";
             btAgendayCalendario.TextAlign = ContentAlignment.MiddleLeft;
@@ -410,7 +459,7 @@
             subPanelAlmacenes.Dock = DockStyle.Top;
             subPanelAlmacenes.Location = new Point(0, 165);
             subPanelAlmacenes.Name = "subPanelAlmacenes";
-            subPanelAlmacenes.Size = new Size(272, 68);
+            subPanelAlmacenes.Size = new Size(251, 68);
             subPanelAlmacenes.TabIndex = 1;
             // 
             // btGestionarAlmacenes
@@ -426,11 +475,12 @@
             btGestionarAlmacenes.Location = new Point(0, 35);
             btGestionarAlmacenes.Name = "btGestionarAlmacenes";
             btGestionarAlmacenes.Padding = new Padding(30, 0, 0, 0);
-            btGestionarAlmacenes.Size = new Size(272, 35);
+            btGestionarAlmacenes.Size = new Size(251, 35);
             btGestionarAlmacenes.TabIndex = 2;
             btGestionarAlmacenes.Text = "Gestionar Almacenes";
             btGestionarAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
             btGestionarAlmacenes.UseVisualStyleBackColor = false;
+            btGestionarAlmacenes.Click += btGestionarAlmacenes_Click;
             // 
             // btVerAlmacenes
             // 
@@ -445,11 +495,12 @@
             btVerAlmacenes.Location = new Point(0, 0);
             btVerAlmacenes.Name = "btVerAlmacenes";
             btVerAlmacenes.Padding = new Padding(30, 0, 0, 0);
-            btVerAlmacenes.Size = new Size(272, 35);
+            btVerAlmacenes.Size = new Size(251, 35);
             btVerAlmacenes.TabIndex = 1;
             btVerAlmacenes.Text = "Ver Almacenes";
             btVerAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
             btVerAlmacenes.UseVisualStyleBackColor = false;
+            btVerAlmacenes.Click += btVerAlmacenes_Click;
             // 
             // btAlmacenes
             // 
@@ -464,7 +515,7 @@
             btAlmacenes.Location = new Point(0, 125);
             btAlmacenes.Name = "btAlmacenes";
             btAlmacenes.Padding = new Padding(10, 0, 0, 0);
-            btAlmacenes.Size = new Size(272, 40);
+            btAlmacenes.Size = new Size(251, 40);
             btAlmacenes.TabIndex = 1;
             btAlmacenes.Text = "Almacenes";
             btAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
@@ -478,7 +529,7 @@
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(272, 125);
+            panel3.Size = new Size(251, 125);
             panel3.TabIndex = 1;
             // 
             // pictureBox4
@@ -490,15 +541,48 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // ChildrenForm
             // 
             ChildrenForm.BackColor = Color.DarkSlateGray;
+            ChildrenForm.BackgroundImage = (Image)resources.GetObject("ChildrenForm.BackgroundImage");
+            ChildrenForm.Controls.Add(lbfecha);
+            ChildrenForm.Controls.Add(lbhora);
             ChildrenForm.Dock = DockStyle.Fill;
-            ChildrenForm.Location = new Point(272, 35);
+            ChildrenForm.Location = new Point(272, 49);
             ChildrenForm.Name = "ChildrenForm";
-            ChildrenForm.Size = new Size(842, 676);
+            ChildrenForm.Size = new Size(842, 662);
             ChildrenForm.TabIndex = 2;
+            // 
+            // lbfecha
+            // 
+            lbfecha.AutoSize = true;
+            lbfecha.BackColor = Color.Transparent;
+            lbfecha.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lbfecha.ForeColor = SystemColors.ActiveCaptionText;
+            lbfecha.Location = new Point(336, 303);
+            lbfecha.Name = "lbfecha";
+            lbfecha.Size = new Size(139, 46);
+            lbfecha.TabIndex = 2;
+            lbfecha.Text = "label3";
+            // 
+            // lbhora
+            // 
+            lbhora.AutoSize = true;
+            lbhora.BackColor = Color.Transparent;
+            lbhora.Font = new Font("Arial Rounded MT Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            lbhora.ForeColor = SystemColors.ActiveCaptionText;
+            lbhora.Location = new Point(296, 239);
+            lbhora.Name = "lbhora";
+            lbhora.Size = new Size(164, 70);
+            lbhora.TabIndex = 0;
+            lbhora.Text = "hora";
+            // 
+            // tmrFecha_Hora
+            // 
+            tmrFecha_Hora.Enabled = true;
+            tmrFecha_Hora.Tick += timer1_Tick;
             // 
             // Principal_Prueba
             // 
@@ -512,6 +596,7 @@
             Name = "Principal_Prueba";
             Text = "Principal_Prueba";
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -522,6 +607,8 @@
             subPanelAlmacenes.ResumeLayout(false);
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ChildrenForm.ResumeLayout(false);
+            ChildrenForm.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -554,5 +641,10 @@
         private Panel panel3;
         private PictureBox pictureBox4;
         private Panel ChildrenForm;
+        private Label lbfecha;
+        private Label lbhora;
+        private System.Windows.Forms.Timer tmrFecha_Hora;
+        private Boton_personalizado Bt_Nombre_de_Usuario;
+        private PictureBox pictureBox5;
     }
 }
