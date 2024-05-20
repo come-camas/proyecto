@@ -28,111 +28,143 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Administracion));
+            panel1 = new Panel();
+            Eliminar_Empleado = new Button();
+            Crear_Emple = new Button();
+            panel2 = new Panel();
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.CadetBlue;
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(Eliminar_Empleado);
+            panel1.Controls.Add(Crear_Emple);
+            panel1.Controls.Add(panel2);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(340, 886);
+            panel1.TabIndex = 0;
+            // 
+            // Eliminar_Empleado
+            // 
+            Eliminar_Empleado.BackColor = Color.DarkCyan;
+            Eliminar_Empleado.Dock = DockStyle.Top;
+            Eliminar_Empleado.FlatAppearance.BorderSize = 0;
+            Eliminar_Empleado.FlatStyle = FlatStyle.Flat;
+            Eliminar_Empleado.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Eliminar_Empleado.ForeColor = SystemColors.MenuBar;
+            Eliminar_Empleado.Location = new Point(0, 237);
+            Eliminar_Empleado.Name = "Eliminar_Empleado";
+            Eliminar_Empleado.Padding = new Padding(10, 0, 0, 0);
+            Eliminar_Empleado.Size = new Size(340, 81);
+            Eliminar_Empleado.TabIndex = 2;
+            Eliminar_Empleado.Text = "Crear Nomina";
+            Eliminar_Empleado.TextAlign = ContentAlignment.MiddleLeft;
+            Eliminar_Empleado.UseVisualStyleBackColor = false;
+            // 
+            // Crear_Emple
+            // 
+            Crear_Emple.BackColor = Color.DarkCyan;
+            Crear_Emple.Dock = DockStyle.Top;
+            Crear_Emple.FlatAppearance.BorderSize = 0;
+            Crear_Emple.FlatStyle = FlatStyle.Flat;
+            Crear_Emple.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Crear_Emple.ForeColor = SystemColors.MenuBar;
+            Crear_Emple.Location = new Point(0, 156);
+            Crear_Emple.Name = "Crear_Emple";
+            Crear_Emple.Padding = new Padding(10, 0, 0, 0);
+            Crear_Emple.Size = new Size(340, 81);
+            Crear_Emple.TabIndex = 1;
+            Crear_Emple.Text = "Nuevo Empleado";
+            Crear_Emple.TextAlign = ContentAlignment.MiddleLeft;
+            Crear_Emple.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(pictureBox1);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(340, 156);
+            panel2.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(100, 71);
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(212, 198);
+            pictureBox1.Size = new Size(340, 156);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // button1
             // 
-            pictureBox2.Anchor = AnchorStyles.None;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(541, 71);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(212, 198);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            button1.BackColor = Color.DarkCyan;
+            button1.Dock = DockStyle.Top;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.MenuBar;
+            button1.Location = new Point(0, 318);
+            button1.Name = "button1";
+            button1.Padding = new Padding(10, 0, 0, 0);
+            button1.Size = new Size(340, 81);
+            button1.TabIndex = 3;
+            button1.Text = "Baja de Empleado";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
             // 
-            // pictureBox3
+            // button2
             // 
-            pictureBox3.Anchor = AnchorStyles.None;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(316, 340);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(212, 198);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(121, 281);
-            label1.Name = "label1";
-            label1.Size = new Size(179, 35);
-            label1.TabIndex = 3;
-            label1.Text = "Crear Nomina";
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Font = new Font("Arial Narrow", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(524, 281);
-            label2.Name = "label2";
-            label2.Size = new Size(252, 35);
-            label2.TabIndex = 4;
-            label2.Text = "Modificar/Actualizar";
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Arial Narrow", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(257, 541);
-            label3.Name = "label3";
-            label3.Size = new Size(326, 35);
-            label3.TabIndex = 5;
-            label3.Text = "Eliminar/Calcular Liquidez\r\n";
+            button2.BackColor = Color.DarkCyan;
+            button2.Dock = DockStyle.Top;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.MenuBar;
+            button2.Location = new Point(0, 399);
+            button2.Name = "button2";
+            button2.Padding = new Padding(10, 0, 0, 0);
+            button2.Size = new Size(340, 81);
+            button2.TabIndex = 4;
+            button2.Text = "Actualizar Datos";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = false;
             // 
             // Form_Administracion
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(846, 627);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            BackColor = Color.White;
+            ClientSize = new Size(1508, 886);
+            Controls.Add(panel1);
+            Margin = new Padding(4);
             Name = "Form_Administracion";
             Text = "Form_Administracion";
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
+        private Panel panel1;
+        private Button Crear_Emple;
+        private Button Eliminar_Empleado;
+        private Panel panel2;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private Label label1;
-        private Label label2;
-        private Label label3;
+        private Button button1;
+        private Button button2;
     }
 }
