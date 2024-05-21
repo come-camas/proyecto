@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Gestion_Agricola
-build_property.ProjectDir = C:\Users\moise\source\repos\proyecto\Gestion_Agricola\
+build_property.ProjectDir = C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
