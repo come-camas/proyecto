@@ -28,111 +28,132 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Administracion));
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel1 = new Panel();
+            Crear_Nomina = new Button();
+            panel2 = new Panel();
+            Actualizar_Datos_nomina = new Button();
+            Eliminar_Empleado = new Button();
+            Salir_Nomina = new Button();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // pictureBox1
+            // panel1
             // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(100, 71);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(212, 198);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            panel1.AutoScroll = true;
+            panel1.BackColor = Color.CadetBlue;
+            panel1.Controls.Add(Salir_Nomina);
+            panel1.Controls.Add(Eliminar_Empleado);
+            panel1.Controls.Add(Actualizar_Datos_nomina);
+            panel1.Controls.Add(Crear_Nomina);
+            panel1.Controls.Add(panel2);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(300, 816);
+            panel1.TabIndex = 2;
             // 
-            // pictureBox2
+            // Crear_Nomina
             // 
-            pictureBox2.Anchor = AnchorStyles.None;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(541, 71);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(212, 198);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            Crear_Nomina.BackColor = Color.DarkCyan;
+            Crear_Nomina.Dock = DockStyle.Top;
+            Crear_Nomina.FlatAppearance.BorderSize = 0;
+            Crear_Nomina.FlatStyle = FlatStyle.Flat;
+            Crear_Nomina.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            Crear_Nomina.ForeColor = SystemColors.ButtonHighlight;
+            Crear_Nomina.Location = new Point(0, 150);
+            Crear_Nomina.Name = "Crear_Nomina";
+            Crear_Nomina.Padding = new Padding(10, 0, 0, 0);
+            Crear_Nomina.RightToLeft = RightToLeft.No;
+            Crear_Nomina.Size = new Size(300, 50);
+            Crear_Nomina.TabIndex = 0;
+            Crear_Nomina.Text = "Crear Nomina";
+            Crear_Nomina.TextAlign = ContentAlignment.MiddleLeft;
+            Crear_Nomina.UseVisualStyleBackColor = false;
             // 
-            // pictureBox3
+            // panel2
             // 
-            pictureBox3.Anchor = AnchorStyles.None;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(316, 340);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(212, 198);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(300, 150);
+            panel2.TabIndex = 1;
             // 
-            // label1
+            // Actualizar_Datos_nomina
             // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(121, 281);
-            label1.Name = "label1";
-            label1.Size = new Size(179, 35);
-            label1.TabIndex = 3;
-            label1.Text = "Crear Nomina";
+            Actualizar_Datos_nomina.BackColor = Color.DarkCyan;
+            Actualizar_Datos_nomina.Dock = DockStyle.Top;
+            Actualizar_Datos_nomina.FlatAppearance.BorderSize = 0;
+            Actualizar_Datos_nomina.FlatStyle = FlatStyle.Flat;
+            Actualizar_Datos_nomina.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            Actualizar_Datos_nomina.ForeColor = SystemColors.ButtonHighlight;
+            Actualizar_Datos_nomina.Location = new Point(0, 200);
+            Actualizar_Datos_nomina.Name = "Actualizar_Datos_nomina";
+            Actualizar_Datos_nomina.Padding = new Padding(10, 0, 0, 0);
+            Actualizar_Datos_nomina.RightToLeft = RightToLeft.No;
+            Actualizar_Datos_nomina.Size = new Size(300, 50);
+            Actualizar_Datos_nomina.TabIndex = 2;
+            Actualizar_Datos_nomina.Text = "Actualizar Datos";
+            Actualizar_Datos_nomina.TextAlign = ContentAlignment.MiddleLeft;
+            Actualizar_Datos_nomina.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // Eliminar_Empleado
             // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Font = new Font("Arial Narrow", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(524, 281);
-            label2.Name = "label2";
-            label2.Size = new Size(252, 35);
-            label2.TabIndex = 4;
-            label2.Text = "Modificar/Actualizar";
+            Eliminar_Empleado.BackColor = Color.DarkCyan;
+            Eliminar_Empleado.Dock = DockStyle.Top;
+            Eliminar_Empleado.FlatAppearance.BorderSize = 0;
+            Eliminar_Empleado.FlatStyle = FlatStyle.Flat;
+            Eliminar_Empleado.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            Eliminar_Empleado.ForeColor = SystemColors.ButtonHighlight;
+            Eliminar_Empleado.Location = new Point(0, 250);
+            Eliminar_Empleado.Name = "Eliminar_Empleado";
+            Eliminar_Empleado.Padding = new Padding(10, 0, 0, 0);
+            Eliminar_Empleado.RightToLeft = RightToLeft.No;
+            Eliminar_Empleado.Size = new Size(300, 50);
+            Eliminar_Empleado.TabIndex = 3;
+            Eliminar_Empleado.Text = "Eliminar Empleado";
+            Eliminar_Empleado.TextAlign = ContentAlignment.MiddleLeft;
+            Eliminar_Empleado.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // Salir_Nomina
             // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Arial Narrow", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(257, 541);
-            label3.Name = "label3";
-            label3.Size = new Size(326, 35);
-            label3.TabIndex = 5;
-            label3.Text = "Eliminar/Calcular Liquidez\r\n";
+            Salir_Nomina.BackColor = Color.DarkCyan;
+            Salir_Nomina.Dock = DockStyle.Top;
+            Salir_Nomina.FlatAppearance.BorderSize = 0;
+            Salir_Nomina.FlatStyle = FlatStyle.Flat;
+            Salir_Nomina.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Italic, GraphicsUnit.Point);
+            Salir_Nomina.ForeColor = SystemColors.ButtonHighlight;
+            Salir_Nomina.Location = new Point(0, 300);
+            Salir_Nomina.Name = "Salir_Nomina";
+            Salir_Nomina.Padding = new Padding(10, 0, 0, 0);
+            Salir_Nomina.RightToLeft = RightToLeft.No;
+            Salir_Nomina.Size = new Size(300, 50);
+            Salir_Nomina.TabIndex = 4;
+            Salir_Nomina.Text = "Salir";
+            Salir_Nomina.TextAlign = ContentAlignment.MiddleLeft;
+            Salir_Nomina.UseVisualStyleBackColor = false;
             // 
             // Form_Administracion
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(846, 627);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            ClientSize = new Size(1344, 816);
+            Controls.Add(panel1);
+            Margin = new Padding(4);
+            MinimumSize = new Size(500, 400);
             Name = "Form_Administracion";
             Text = "Form_Administracion";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private Label label1;
-        private Label label2;
-        private Label label3;
+        private Panel panel1;
+        private Panel panel2;
+        private Button Crear_Nomina;
+        private Button Salir_Nomina;
+        private Button Eliminar_Empleado;
+        private Button Actualizar_Datos_nomina;
     }
 }
