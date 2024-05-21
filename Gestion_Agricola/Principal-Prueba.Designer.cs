@@ -554,6 +554,7 @@
             ChildrenForm.Name = "ChildrenForm";
             ChildrenForm.Size = new Size(842, 662);
             ChildrenForm.TabIndex = 2;
+            ChildrenForm.Paint += ChildrenForm_Paint;
             // 
             // lbfecha
             // 
