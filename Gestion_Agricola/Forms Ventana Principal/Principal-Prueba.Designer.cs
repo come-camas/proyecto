@@ -546,7 +546,6 @@
             // ChildrenForm
             // 
             ChildrenForm.BackColor = Color.DarkSlateGray;
-            ChildrenForm.BackgroundImage = (Image)resources.GetObject("ChildrenForm.BackgroundImage");
             ChildrenForm.Controls.Add(lbfecha);
             ChildrenForm.Controls.Add(lbhora);
             ChildrenForm.Dock = DockStyle.Fill;
@@ -560,7 +559,7 @@
             lbfecha.AutoSize = true;
             lbfecha.BackColor = Color.Transparent;
             lbfecha.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            lbfecha.ForeColor = SystemColors.ActiveCaptionText;
+            lbfecha.ForeColor = SystemColors.Control;
             lbfecha.Location = new Point(336, 303);
             lbfecha.Name = "lbfecha";
             lbfecha.Size = new Size(139, 46);
@@ -572,7 +571,7 @@
             lbhora.AutoSize = true;
             lbhora.BackColor = Color.Transparent;
             lbhora.Font = new Font("Arial Rounded MT Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            lbhora.ForeColor = SystemColors.ActiveCaptionText;
+            lbhora.ForeColor = SystemColors.Control;
             lbhora.Location = new Point(296, 239);
             lbhora.Name = "lbhora";
             lbhora.Size = new Size(164, 70);

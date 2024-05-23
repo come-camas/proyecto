@@ -28,32 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestionar_Almacenes));
+            groupBox1 = new GroupBox();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            cmbxProducto = new ComboBox();
+            btCambiarImagen = new Button();
+            btEliminar = new Button();
+            btGuardar = new Button();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // groupBox1
             // 
-            button1.Location = new Point(350, 264);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            groupBox1.Controls.Add(pictureBox2);
+            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Controls.Add(cmbxProducto);
+            groupBox1.Controls.Add(btCambiarImagen);
+            groupBox1.Controls.Add(btEliminar);
+            groupBox1.Controls.Add(btGuardar);
+            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Location = new Point(12, 12);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(822, 603);
+            groupBox1.TabIndex = 11;
+            groupBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(307, 123);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(33, 32);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(521, 112);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(234, 199);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
+            // cmbxProducto
+            // 
+            cmbxProducto.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbxProducto.ForeColor = SystemColors.ActiveCaptionText;
+            cmbxProducto.FormattingEnabled = true;
+            cmbxProducto.Location = new Point(94, 123);
+            cmbxProducto.Name = "cmbxProducto";
+            cmbxProducto.Size = new Size(207, 32);
+            cmbxProducto.TabIndex = 7;
+            // 
+            // btCambiarImagen
+            // 
+            btCambiarImagen.ForeColor = SystemColors.ActiveCaptionText;
+            btCambiarImagen.Location = new Point(521, 361);
+            btCambiarImagen.Name = "btCambiarImagen";
+            btCambiarImagen.Size = new Size(234, 42);
+            btCambiarImagen.TabIndex = 6;
+            btCambiarImagen.Text = "Cambiar Imagen";
+            btCambiarImagen.UseVisualStyleBackColor = true;
+            // 
+            // btEliminar
+            // 
+            btEliminar.ForeColor = SystemColors.ActiveCaptionText;
+            btEliminar.Location = new Point(269, 451);
+            btEliminar.Name = "btEliminar";
+            btEliminar.Size = new Size(205, 62);
+            btEliminar.TabIndex = 5;
+            btEliminar.Text = "Eliminar";
+            btEliminar.UseVisualStyleBackColor = true;
+            // 
+            // btGuardar
+            // 
+            btGuardar.ForeColor = SystemColors.ActiveCaptionText;
+            btGuardar.Location = new Point(18, 451);
+            btGuardar.Name = "btGuardar";
+            btGuardar.Size = new Size(205, 62);
+            btGuardar.TabIndex = 4;
+            btGuardar.Text = "Guardar";
+            btGuardar.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.ForeColor = SystemColors.ActiveCaptionText;
+            textBox2.Location = new Point(94, 291);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(207, 30);
+            textBox2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ActiveCaptionText;
+            label2.Location = new Point(101, 212);
+            label2.Name = "label2";
+            label2.Size = new Size(197, 46);
+            label2.TabIndex = 1;
+            label2.Text = "Cantidad";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(98, 53);
+            label1.Name = "label1";
+            label1.Size = new Size(200, 46);
+            label1.TabIndex = 0;
+            label1.Text = "Producto";
             // 
             // Gestionar_Almacenes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(846, 627);
-            Controls.Add(button1);
+            Controls.Add(groupBox1);
             Name = "Gestionar_Almacenes";
             Text = "Gestionar_Almacenes";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
+        private GroupBox groupBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
+        private ComboBox cmbxProducto;
+        private Button btCambiarImagen;
+        private Button btEliminar;
+        private Button btGuardar;
+        private TextBox textBox2;
+        private Label label2;
+        private Label label1;
     }
 }
