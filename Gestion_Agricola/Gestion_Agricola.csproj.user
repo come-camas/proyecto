@@ -1,55 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Analisis_15Dias.cs">
+    <Compile Update="Forms-Ventana-Principal\Analisis_15Dias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Analisis_30Dias.cs">
+    <Compile Update="Forms-Ventana-Principal\Analisis_30Dias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Analisis_Hoy.cs">
+    <Compile Update="Forms-Ventana-Principal\Analisis_Hoy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Boton_personalizado.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Calendario.cs">
+    <Compile Update="Forms-Ventana-Principal\Calendario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form-Administracion.cs">
+    <Compile Update="Forms-Administracion\Form-Administracion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Gestionar_Almacenes.cs">
+    <Compile Update="Forms-Ventana-Principal\Gestionar_Almacenes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Gestionar_Parcelas.cs">
+    <Compile Update="Forms-Ventana-Principal\Gestionar_Parcelas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Login.cs">
+    <Compile Update="Forms-Administracion\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Principal-Prueba.cs">
+    <Compile Update="Forms-Ventana-Principal\Principal-Prueba.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Recordatorio.cs">
+    <Compile Update="Forms-Ventana-Principal\Recordatorio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SubventanaClima.cs">
+    <Compile Update="Forms-Ventana-Principal\Tareas_Pendientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Tareas_Pendientes.cs">
+    <Compile Update="Forms-Ventana-Principal\Tareas_Pendientes_Crears.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Tareas_Pendientes_Crears.cs">
+    <Compile Update="Forms-Administracion\Ventana_Gerente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Ventana_Gerente.cs">
+    <Compile Update="Forms-Ventana-Principal\VerAlmacenes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="VerAlmacenes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Ver_Parcelas.cs">
+    <Compile Update="Forms-Ventana-Principal\Ver_Parcelas.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

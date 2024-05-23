@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\proyectos\\Gestion_Agricola\\Gestion_Agricola.csproj",
       "projectName": "Gestion_Agricola",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
+      "projectPath": "C:\\Users\\Usuario\\source\\repos\\proyectos\\Gestion_Agricola\\Gestion_Agricola.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\proyecto\\Gestion_Agricola\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\source\\repos\\proyectos\\Gestion_Agricola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
