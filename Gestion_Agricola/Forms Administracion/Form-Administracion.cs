@@ -17,8 +17,9 @@ namespace Gestion_Agricola
             InitializeComponent();
         }
 
-
-
-
+        private void Salir_Nomina_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Close();
+        }
     }
 }

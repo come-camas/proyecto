@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gestion_Agricola
+namespace Gestion_Agricola.Clases
 {
     public class Empleado : Persona
     {
@@ -12,10 +12,12 @@ namespace Gestion_Agricola
         private DateTime Fecha_Ingreso;
         private double Salario;
 
-        public Empleado() {
+        public Empleado()
+        {
         }
 
-        public Empleado(string codigo, string cedula, string nombre, string apellido, string telefono, string direccion, string email, string departamento, string cargo, DateTime fecha_nac, DateTime fecha_ingreso) : base(nombre, apellido, cedula, direccion, departamento, fecha_nac) {
+        public Empleado(string codigo, string cedula, string nombre, string apellido, string telefono, string direccion, string email, string departamento, string cargo, DateTime fecha_nac, DateTime fecha_ingreso) : base(nombre, apellido, cedula, direccion, departamento, fecha_nac)
+        {
             Codigo = codigo;
             Cargo = cargo;
             Telefono = telefono;
@@ -31,11 +33,11 @@ namespace Gestion_Agricola
         public string apellidoE { get; set; }
         public string telefonoE { get; set; }
         public string direccionE { get; set; }
-        public string emailE { get; set; }  
-        public string departamentoE {  get; set; }
+        public string emailE { get; set; }
+        public string departamentoE { get; set; }
         public string cargoE { get; set; }
-        public DateTime fecha_nacE { get;  }
-        public DateTime fecha_IngresoE {  get; }
+        public DateTime fecha_nacE { get; }
+        public DateTime fecha_IngresoE { get; }
 
         private double determinarsalario(string cargo)
         {

@@ -1,4 +1,4 @@
-namespace Gestion_Agricola
+namespace Gestion_Agricola.Clases
 {
     internal static class Program
     {

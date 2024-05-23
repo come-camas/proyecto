@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gestion_Agricola
+namespace Gestion_Agricola.Clases
 {
     public class Persona
     {
-        private string Nombre, Apellido, Cedula, Direccion,Departamento;
+        private string Nombre, Apellido, Cedula, Direccion, Departamento;
         private DateTime Fecha_Nac;
 
         public Persona()
