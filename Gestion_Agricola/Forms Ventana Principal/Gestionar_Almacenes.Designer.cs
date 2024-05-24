@@ -39,6 +39,8 @@
             textBox2 = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            txtCodigo = new TextBox();
+            label3 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -46,6 +48,8 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(txtCodigo);
+            groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(pictureBox2);
             groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(cmbxProducto);
@@ -64,7 +68,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(307, 123);
+            pictureBox2.Location = new Point(334, 236);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(33, 32);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -86,7 +90,7 @@
             cmbxProducto.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cmbxProducto.ForeColor = SystemColors.ActiveCaptionText;
             cmbxProducto.FormattingEnabled = true;
-            cmbxProducto.Location = new Point(94, 123);
+            cmbxProducto.Location = new Point(118, 236);
             cmbxProducto.Name = "cmbxProducto";
             cmbxProducto.Size = new Size(207, 32);
             cmbxProducto.TabIndex = 7;
@@ -125,7 +129,7 @@
             // 
             textBox2.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = SystemColors.ActiveCaptionText;
-            textBox2.Location = new Point(94, 291);
+            textBox2.Location = new Point(124, 361);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(207, 30);
             textBox2.TabIndex = 3;
@@ -135,7 +139,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point(101, 212);
+            label2.Location = new Point(125, 290);
             label2.Name = "label2";
             label2.Size = new Size(197, 46);
             label2.TabIndex = 1;
@@ -146,11 +150,31 @@
             label1.AutoSize = true;
             label1.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(98, 53);
+            label1.Location = new Point(128, 163);
             label1.Name = "label1";
             label1.Size = new Size(200, 46);
             label1.TabIndex = 0;
             label1.Text = "Producto";
+            // 
+            // txtCodigo
+            // 
+            txtCodigo.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCodigo.ForeColor = SystemColors.ActiveCaptionText;
+            txtCodigo.Location = new Point(121, 102);
+            txtCodigo.Name = "txtCodigo";
+            txtCodigo.Size = new Size(207, 30);
+            txtCodigo.TabIndex = 11;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ActiveCaptionText;
+            label3.Location = new Point(145, 43);
+            label3.Name = "label3";
+            label3.Size = new Size(159, 46);
+            label3.TabIndex = 10;
+            label3.Text = "Codigo";
             // 
             // Gestionar_Almacenes
             // 
@@ -179,5 +203,7 @@
         private TextBox textBox2;
         private Label label2;
         private Label label1;
+        private TextBox txtCodigo;
+        private Label label3;
     }
 }

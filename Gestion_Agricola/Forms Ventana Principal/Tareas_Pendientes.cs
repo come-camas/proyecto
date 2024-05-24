@@ -15,12 +15,15 @@ namespace Gestion_Agricola
         public Tareas_Pendientes()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            
             Tareas_Pendientes_Crears s = new Tareas_Pendientes_Crears();
-            s.Show();
+           
+            s.ShowDialog();
         }
 
         private void Tareas_Pendientes_Load(object sender, EventArgs e)
