@@ -38,6 +38,8 @@
             textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
             cbx = new CheckBox();
+            textBox2 = new TextBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -85,7 +87,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Bahnschrift SemiBold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(35, 51);
+            label1.Location = new Point(17, 51);
             label1.Name = "label1";
             label1.Size = new Size(41, 34);
             label1.TabIndex = 2;
@@ -94,7 +96,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(82, 55);
+            textBox1.Location = new Point(64, 55);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(141, 30);
             textBox1.TabIndex = 3;
@@ -102,9 +104,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(229, 55);
+            pictureBox1.Location = new Point(211, 55);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(34, 30);
+            pictureBox1.Size = new Size(33, 30);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -113,18 +115,38 @@
             // 
             cbx.AutoSize = true;
             cbx.Font = new Font("Bahnschrift SemiBold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            cbx.Location = new Point(618, 47);
+            cbx.Location = new Point(627, 52);
             cbx.Name = "cbx";
             cbx.Size = new Size(207, 38);
             cbx.TabIndex = 5;
             cbx.Text = "En Existencia";
             cbx.UseVisualStyleBackColor = true;
             // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(389, 56);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(189, 30);
+            textBox2.TabIndex = 6;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Bahnschrift SemiBold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(267, 52);
+            label2.Name = "label2";
+            label2.Size = new Size(116, 34);
+            label2.TabIndex = 7;
+            label2.Text = "Nombre";
+            // 
             // VerAlmacenes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(846, 627);
+            Controls.Add(label2);
+            Controls.Add(textBox2);
             Controls.Add(cbx);
             Controls.Add(pictureBox1);
             Controls.Add(textBox1);
@@ -150,5 +172,7 @@
         private TextBox textBox1;
         private PictureBox pictureBox1;
         private CheckBox cbx;
+        private TextBox textBox2;
+        private Label label2;
     }
 }
