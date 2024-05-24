@@ -55,6 +55,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(657, 53);
             panel1.TabIndex = 7;
+            panel1.MouseDown += panel1_MouseDown;
             // 
             // label4
             // 

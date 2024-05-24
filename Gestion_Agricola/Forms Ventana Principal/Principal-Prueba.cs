@@ -202,7 +202,7 @@ namespace Gestion_Agricola
         private void btCerrarSesion_Click(object sender, EventArgs e)
         {
             ocultar();
-            Application.Exit(); 
+            Application.Exit();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -213,8 +213,13 @@ namespace Gestion_Agricola
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-           Form_Administracion a=new Form_Administracion();
+            Form_Administracion a = new Form_Administracion();
             a.Show();
-           }
+        }
+
+        private void ChildrenForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
