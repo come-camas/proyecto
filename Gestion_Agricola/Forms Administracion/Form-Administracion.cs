@@ -12,7 +12,7 @@ namespace Gestion_Agricola
 {
     public partial class Form_Administracion : Form
     {
-       
+
         public Form_Administracion()
         {
             InitializeComponent();
@@ -25,28 +25,34 @@ namespace Gestion_Agricola
 
         Form formularioactivo = null;
         private void abrirformularios(Form formhijo)
-        { 
-            if (formularioactivo != null) 
+        {
+            if (formularioactivo != null)
 
-              
-              formularioactivo = formhijo;
-              formhijo.TopLevel = false;
-              formhijo.FormBorderStyle = FormBorderStyle.None;
-              formhijo.Dock = DockStyle.Fill;
-              formhijo.Controls.Add(formhijo);
-              formhijo.Tag = formhijo;
-              formhijo.BringToFront();
-              formhijo.Show();
-
-            
-
-
-
+                formularioactivo.Close();
+            formularioactivo = formhijo;
+            formhijo.TopLevel = false;
+            formhijo.FormBorderStyle = FormBorderStyle.None;
+            formhijo.Dock = DockStyle.Fill;
+            Panel_hijo.Controls.Add(formhijo);
+            Panel_hijo.Tag = formhijo;
+            formhijo.BringToFront();
+            formhijo.Show();
         }
 
         private void Crear_Nomina_Click(object sender, EventArgs e)
         {
             abrirformularios(new Crear_Nomina());
+            
+        }
+
+        private void Panel_hijo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Actualizar_Datos_nomina_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

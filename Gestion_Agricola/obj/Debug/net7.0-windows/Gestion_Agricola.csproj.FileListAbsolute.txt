@@ -66,3 +66,6 @@ C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\G
 C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Ver_Parcelas.resources
 C:\Users\moise\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Crear_Nomina.resources
 C:\Users\moise\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Crear_Empleado.resources
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Crear_Empleado.resources
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Crear_Nomina.resources
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Informacion.resources
