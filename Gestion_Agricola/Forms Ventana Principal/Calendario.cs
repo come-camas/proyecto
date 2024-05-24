@@ -16,5 +16,10 @@ namespace Gestion_Agricola
         {
             InitializeComponent();
         }
+
+        private void Calendario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
