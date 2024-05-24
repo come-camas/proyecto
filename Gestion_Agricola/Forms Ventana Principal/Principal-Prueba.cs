@@ -221,5 +221,11 @@ namespace Gestion_Agricola
         {
 
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Informacion s=new Informacion();
+            s.ShowDialog();
+        }
     }
 }

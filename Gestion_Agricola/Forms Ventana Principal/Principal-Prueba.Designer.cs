@@ -59,10 +59,10 @@
             panel3 = new Panel();
             pictureBox4 = new PictureBox();
             ChildrenForm = new Panel();
+            pictureBox6 = new PictureBox();
             lbfecha = new Label();
             lbhora = new Label();
             tmrFecha_Hora = new System.Windows.Forms.Timer(components);
-            pictureBox6 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -587,6 +587,18 @@
             ChildrenForm.TabIndex = 2;
             ChildrenForm.Paint += ChildrenForm_Paint;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.Azure;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(756, 560);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(74, 72);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 3;
+            pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
+            // 
             // lbfecha
             // 
             lbfecha.AutoSize = true;
@@ -619,17 +631,6 @@
             // 
             tmrFecha_Hora.Enabled = true;
             tmrFecha_Hora.Tick += timer1_Tick;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.BackColor = Color.Azure;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(756, 560);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(74, 72);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 3;
-            pictureBox6.TabStop = false;
             // 
             // Principal_Prueba
             // 
