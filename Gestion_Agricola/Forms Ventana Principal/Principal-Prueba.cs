@@ -66,7 +66,7 @@ namespace Gestion_Agricola
         {
             if (activeForm != null)
 
-                activeForm.Close();
+            activeForm.Close();
             activeForm = hijo;
             hijo.TopLevel = false;
             hijo.FormBorderStyle = FormBorderStyle.None;

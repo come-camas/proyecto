@@ -64,3 +64,5 @@ C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\G
 C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Tareas_Pendientes_Crears.resources
 C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.VerAlmacenes.resources
 C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Ver_Parcelas.resources
+C:\Users\moise\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Crear_Nomina.resources
+C:\Users\moise\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Crear_Empleado.resources
