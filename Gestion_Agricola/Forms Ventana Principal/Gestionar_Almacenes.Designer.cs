@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestionar_Almacenes));
             groupBox1 = new GroupBox();
+            txtCodigo = new TextBox();
+            label3 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             cmbxProducto = new ComboBox();
@@ -39,8 +41,6 @@
             textBox2 = new TextBox();
             label2 = new Label();
             label1 = new Label();
-            txtCodigo = new TextBox();
-            label3 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -64,6 +64,26 @@
             groupBox1.Size = new Size(822, 603);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
+            // 
+            // txtCodigo
+            // 
+            txtCodigo.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCodigo.ForeColor = SystemColors.ActiveCaptionText;
+            txtCodigo.Location = new Point(121, 102);
+            txtCodigo.Name = "txtCodigo";
+            txtCodigo.Size = new Size(207, 30);
+            txtCodigo.TabIndex = 11;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ActiveCaptionText;
+            label3.Location = new Point(198, 42);
+            label3.Name = "label3";
+            label3.Size = new Size(63, 46);
+            label3.TabIndex = 10;
+            label3.Text = "ID";
             // 
             // pictureBox2
             // 
@@ -155,26 +175,6 @@
             label1.Size = new Size(200, 46);
             label1.TabIndex = 0;
             label1.Text = "Producto";
-            // 
-            // txtCodigo
-            // 
-            txtCodigo.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCodigo.ForeColor = SystemColors.ActiveCaptionText;
-            txtCodigo.Location = new Point(121, 102);
-            txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(207, 30);
-            txtCodigo.TabIndex = 11;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(145, 43);
-            label3.Name = "label3";
-            label3.Size = new Size(159, 46);
-            label3.TabIndex = 10;
-            label3.Text = "Codigo";
             // 
             // Gestionar_Almacenes
             // 
