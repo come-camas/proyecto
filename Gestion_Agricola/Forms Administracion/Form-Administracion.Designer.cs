@@ -28,34 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Panel_Admin_Empleado = new Panel();
+            Panel_Padre = new Panel();
             Salir_Nomina = new Button();
             Eliminar_Empleado = new Button();
             Actualizar_Datos_nomina = new Button();
             Crear_Nomina = new Button();
             panel2 = new Panel();
-            Panel_Admin_Empleado.SuspendLayout();
+            Panel_hijo = new Panel();
+            Panel_Padre.SuspendLayout();
             SuspendLayout();
             // 
-            // Panel_Admin_Empleado
+            // Panel_Padre
             // 
-            Panel_Admin_Empleado.AutoScroll = true;
-            Panel_Admin_Empleado.BackColor = Color.CadetBlue;
-            Panel_Admin_Empleado.Controls.Add(Salir_Nomina);
-            Panel_Admin_Empleado.Controls.Add(Eliminar_Empleado);
-            Panel_Admin_Empleado.Controls.Add(Actualizar_Datos_nomina);
-            Panel_Admin_Empleado.Controls.Add(Crear_Nomina);
-            Panel_Admin_Empleado.Controls.Add(panel2);
-            Panel_Admin_Empleado.Dock = DockStyle.Left;
-            Panel_Admin_Empleado.Location = new Point(0, 0);
-            Panel_Admin_Empleado.Margin = new Padding(0);
-            Panel_Admin_Empleado.Name = "Panel_Admin_Empleado";
-            Panel_Admin_Empleado.Size = new Size(300, 816);
-            Panel_Admin_Empleado.TabIndex = 2;
+            Panel_Padre.AutoScroll = true;
+            Panel_Padre.BackColor = Color.FromArgb(11, 7, 17);
+            Panel_Padre.Controls.Add(Salir_Nomina);
+            Panel_Padre.Controls.Add(Eliminar_Empleado);
+            Panel_Padre.Controls.Add(Actualizar_Datos_nomina);
+            Panel_Padre.Controls.Add(Crear_Nomina);
+            Panel_Padre.Controls.Add(panel2);
+            Panel_Padre.Dock = DockStyle.Left;
+            Panel_Padre.Location = new Point(0, 0);
+            Panel_Padre.Margin = new Padding(0);
+            Panel_Padre.Name = "Panel_Padre";
+            Panel_Padre.Size = new Size(300, 816);
+            Panel_Padre.TabIndex = 2;
             // 
             // Salir_Nomina
             // 
-            Salir_Nomina.BackColor = Color.DarkCyan;
+            Salir_Nomina.BackColor = Color.FromArgb(35, 32, 39);
             Salir_Nomina.Dock = DockStyle.Top;
             Salir_Nomina.FlatAppearance.BorderSize = 0;
             Salir_Nomina.FlatStyle = FlatStyle.Flat;
@@ -75,7 +76,7 @@
             // 
             // Eliminar_Empleado
             // 
-            Eliminar_Empleado.BackColor = Color.DarkCyan;
+            Eliminar_Empleado.BackColor = Color.FromArgb(35, 32, 39);
             Eliminar_Empleado.Dock = DockStyle.Top;
             Eliminar_Empleado.FlatAppearance.BorderSize = 0;
             Eliminar_Empleado.FlatStyle = FlatStyle.Flat;
@@ -94,7 +95,7 @@
             // 
             // Actualizar_Datos_nomina
             // 
-            Actualizar_Datos_nomina.BackColor = Color.DarkCyan;
+            Actualizar_Datos_nomina.BackColor = Color.FromArgb(35, 32, 39);
             Actualizar_Datos_nomina.Dock = DockStyle.Top;
             Actualizar_Datos_nomina.FlatAppearance.BorderSize = 0;
             Actualizar_Datos_nomina.FlatStyle = FlatStyle.Flat;
@@ -113,7 +114,7 @@
             // 
             // Crear_Nomina
             // 
-            Crear_Nomina.BackColor = Color.DarkCyan;
+            Crear_Nomina.BackColor = Color.FromArgb(35, 32, 39);
             Crear_Nomina.Dock = DockStyle.Top;
             Crear_Nomina.FlatAppearance.BorderSize = 0;
             Crear_Nomina.FlatStyle = FlatStyle.Flat;
@@ -129,9 +130,11 @@
             Crear_Nomina.Text = "Crear Nomina";
             Crear_Nomina.TextAlign = ContentAlignment.MiddleLeft;
             Crear_Nomina.UseVisualStyleBackColor = false;
+            Crear_Nomina.Click += Crear_Nomina_Click;
             // 
             // panel2
             // 
+            panel2.BackColor = Color.FromArgb(11, 7, 17);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Margin = new Padding(2);
@@ -139,27 +142,39 @@
             panel2.Size = new Size(300, 150);
             panel2.TabIndex = 1;
             // 
+            // Panel_hijo
+            // 
+            Panel_hijo.BackColor = Color.FromArgb(23, 21, 32);
+            Panel_hijo.Dock = DockStyle.Fill;
+            Panel_hijo.Location = new Point(300, 0);
+            Panel_hijo.Name = "Panel_hijo";
+            Panel_hijo.Size = new Size(1044, 816);
+            Panel_hijo.TabIndex = 3;
+            // 
             // Form_Administracion
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(11, 7, 17);
             ClientSize = new Size(1344, 816);
-            Controls.Add(Panel_Admin_Empleado);
-            Margin = new Padding(4, 4, 4, 4);
+            Controls.Add(Panel_hijo);
+            Controls.Add(Panel_Padre);
+            Margin = new Padding(4);
             MinimumSize = new Size(500, 397);
             Name = "Form_Administracion";
             Text = "Form_Administracion";
-            Panel_Admin_Empleado.ResumeLayout(false);
+            Panel_Padre.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel Panel_Admin_Empleado;
+        private Panel Panel_Padre;
         private Panel panel2;
         private Button Crear_Nomina;
         private Button Salir_Nomina;
         private Button Eliminar_Empleado;
         private Button Actualizar_Datos_nomina;
+        private Panel Panel_hijo;
     }
 }
