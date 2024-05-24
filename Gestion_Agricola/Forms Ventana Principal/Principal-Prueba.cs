@@ -87,10 +87,6 @@ namespace Gestion_Agricola
             {
                 subPanelAgendayCalendario.Visible = false;
             }
-            if (subPanelAnalisisDelClima.Visible == true)
-            {
-                subPanelAnalisisDelClima.Visible = false;
-            }
             if (subPanelParcelas.Visible == true)
             {
                 subPanelParcelas.Visible = false;
@@ -123,7 +119,7 @@ namespace Gestion_Agricola
 
         private void btAnalisisdelClima_Click(object sender, EventArgs e)
         {
-            MostrarSubmenu(subPanelAnalisisDelClima);
+            AbrirFormHijo(new Analisis_Hoy());
         }
 
         private void btParcelas_Click(object sender, EventArgs e)
@@ -135,7 +131,6 @@ namespace Gestion_Agricola
             subPanelAlmacenes.Visible = false;
             subPanelParcelas.Visible = false;
             subPanelAgendayCalendario.Visible = false;
-            subPanelAnalisisDelClima.Visible = false;
             subPanelParcelas.Visible = false;
         }
 

@@ -42,10 +42,6 @@
             btGestionarParcelas = new Button();
             btVerParcelas = new Button();
             btParcelas = new Button();
-            subPanelAnalisisDelClima = new Panel();
-            btAnalisisClima30diass = new Button();
-            btAnalisisClima15dias = new Button();
-            btAnalisisClimaHoy = new Button();
             btAnalisisdelClima = new Button();
             subPanelAgendayCalendario = new Panel();
             btCalendario = new Button();
@@ -70,7 +66,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             subPanelParcelas.SuspendLayout();
-            subPanelAnalisisDelClima.SuspendLayout();
             subPanelAgendayCalendario.SuspendLayout();
             subPanelAlmacenes.SuspendLayout();
             panel3.SuspendLayout();
@@ -168,7 +163,6 @@
             panel2.Controls.Add(btCerrarSesion);
             panel2.Controls.Add(subPanelParcelas);
             panel2.Controls.Add(btParcelas);
-            panel2.Controls.Add(subPanelAnalisisDelClima);
             panel2.Controls.Add(btAnalisisdelClima);
             panel2.Controls.Add(subPanelAgendayCalendario);
             panel2.Controls.Add(btAgendayCalendario);
@@ -191,10 +185,10 @@
             btCerrarSesion.ForeColor = SystemColors.ButtonFace;
             btCerrarSesion.Image = (Image)resources.GetObject("btCerrarSesion.Image");
             btCerrarSesion.ImageAlign = ContentAlignment.MiddleRight;
-            btCerrarSesion.Location = new Point(0, 633);
+            btCerrarSesion.Location = new Point(0, 527);
             btCerrarSesion.Name = "btCerrarSesion";
             btCerrarSesion.Padding = new Padding(10, 0, 0, 0);
-            btCerrarSesion.Size = new Size(251, 40);
+            btCerrarSesion.Size = new Size(272, 40);
             btCerrarSesion.TabIndex = 8;
             btCerrarSesion.Text = "Cerrar sesion";
             btCerrarSesion.TextAlign = ContentAlignment.MiddleLeft;
@@ -207,9 +201,9 @@
             subPanelParcelas.Controls.Add(btGestionarParcelas);
             subPanelParcelas.Controls.Add(btVerParcelas);
             subPanelParcelas.Dock = DockStyle.Top;
-            subPanelParcelas.Location = new Point(0, 565);
+            subPanelParcelas.Location = new Point(0, 459);
             subPanelParcelas.Name = "subPanelParcelas";
-            subPanelParcelas.Size = new Size(251, 68);
+            subPanelParcelas.Size = new Size(272, 68);
             subPanelParcelas.TabIndex = 7;
             // 
             // btGestionarParcelas
@@ -225,7 +219,7 @@
             btGestionarParcelas.Location = new Point(0, 35);
             btGestionarParcelas.Name = "btGestionarParcelas";
             btGestionarParcelas.Padding = new Padding(30, 0, 0, 0);
-            btGestionarParcelas.Size = new Size(251, 35);
+            btGestionarParcelas.Size = new Size(272, 35);
             btGestionarParcelas.TabIndex = 2;
             btGestionarParcelas.Text = "Gestionar Parcelas";
             btGestionarParcelas.TextAlign = ContentAlignment.MiddleLeft;
@@ -245,7 +239,7 @@
             btVerParcelas.Location = new Point(0, 0);
             btVerParcelas.Name = "btVerParcelas";
             btVerParcelas.Padding = new Padding(30, 0, 0, 0);
-            btVerParcelas.Size = new Size(251, 35);
+            btVerParcelas.Size = new Size(272, 35);
             btVerParcelas.TabIndex = 1;
             btVerParcelas.Text = "Ver Parcelas";
             btVerParcelas.TextAlign = ContentAlignment.MiddleLeft;
@@ -262,85 +256,15 @@
             btParcelas.ForeColor = SystemColors.ButtonFace;
             btParcelas.Image = (Image)resources.GetObject("btParcelas.Image");
             btParcelas.ImageAlign = ContentAlignment.MiddleRight;
-            btParcelas.Location = new Point(0, 525);
+            btParcelas.Location = new Point(0, 419);
             btParcelas.Name = "btParcelas";
             btParcelas.Padding = new Padding(10, 0, 0, 0);
-            btParcelas.Size = new Size(251, 40);
+            btParcelas.Size = new Size(272, 40);
             btParcelas.TabIndex = 6;
             btParcelas.Text = "Parcelas";
             btParcelas.TextAlign = ContentAlignment.MiddleLeft;
             btParcelas.UseVisualStyleBackColor = false;
             btParcelas.Click += btParcelas_Click;
-            // 
-            // subPanelAnalisisDelClima
-            // 
-            subPanelAnalisisDelClima.BackColor = Color.Silver;
-            subPanelAnalisisDelClima.Controls.Add(btAnalisisClima30diass);
-            subPanelAnalisisDelClima.Controls.Add(btAnalisisClima15dias);
-            subPanelAnalisisDelClima.Controls.Add(btAnalisisClimaHoy);
-            subPanelAnalisisDelClima.Dock = DockStyle.Top;
-            subPanelAnalisisDelClima.Location = new Point(0, 419);
-            subPanelAnalisisDelClima.Name = "subPanelAnalisisDelClima";
-            subPanelAnalisisDelClima.Size = new Size(251, 106);
-            subPanelAnalisisDelClima.TabIndex = 5;
-            // 
-            // btAnalisisClima30diass
-            // 
-            btAnalisisClima30diass.BackColor = Color.CadetBlue;
-            btAnalisisClima30diass.Dock = DockStyle.Top;
-            btAnalisisClima30diass.FlatAppearance.BorderSize = 0;
-            btAnalisisClima30diass.FlatStyle = FlatStyle.Flat;
-            btAnalisisClima30diass.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            btAnalisisClima30diass.ForeColor = SystemColors.ButtonHighlight;
-            btAnalisisClima30diass.ImageAlign = ContentAlignment.MiddleRight;
-            btAnalisisClima30diass.Location = new Point(0, 70);
-            btAnalisisClima30diass.Name = "btAnalisisClima30diass";
-            btAnalisisClima30diass.Padding = new Padding(30, 0, 0, 0);
-            btAnalisisClima30diass.Size = new Size(251, 35);
-            btAnalisisClima30diass.TabIndex = 3;
-            btAnalisisClima30diass.Text = "Analisis  en 30 dias";
-            btAnalisisClima30diass.TextAlign = ContentAlignment.MiddleLeft;
-            btAnalisisClima30diass.UseVisualStyleBackColor = false;
-            btAnalisisClima30diass.Click += btAnalisisClima30diass_Click;
-            // 
-            // btAnalisisClima15dias
-            // 
-            btAnalisisClima15dias.BackColor = Color.CadetBlue;
-            btAnalisisClima15dias.Dock = DockStyle.Top;
-            btAnalisisClima15dias.FlatAppearance.BorderSize = 0;
-            btAnalisisClima15dias.FlatStyle = FlatStyle.Flat;
-            btAnalisisClima15dias.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            btAnalisisClima15dias.ForeColor = SystemColors.ButtonHighlight;
-            btAnalisisClima15dias.ImageAlign = ContentAlignment.MiddleRight;
-            btAnalisisClima15dias.Location = new Point(0, 35);
-            btAnalisisClima15dias.Name = "btAnalisisClima15dias";
-            btAnalisisClima15dias.Padding = new Padding(30, 0, 0, 0);
-            btAnalisisClima15dias.Size = new Size(251, 35);
-            btAnalisisClima15dias.TabIndex = 2;
-            btAnalisisClima15dias.Text = "Analisis en 15 dias";
-            btAnalisisClima15dias.TextAlign = ContentAlignment.MiddleLeft;
-            btAnalisisClima15dias.UseVisualStyleBackColor = false;
-            btAnalisisClima15dias.Click += btAnalisisClima15dias_Click;
-            // 
-            // btAnalisisClimaHoy
-            // 
-            btAnalisisClimaHoy.BackColor = Color.CadetBlue;
-            btAnalisisClimaHoy.Dock = DockStyle.Top;
-            btAnalisisClimaHoy.FlatAppearance.BorderSize = 0;
-            btAnalisisClimaHoy.FlatStyle = FlatStyle.Flat;
-            btAnalisisClimaHoy.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            btAnalisisClimaHoy.ForeColor = SystemColors.ButtonHighlight;
-            btAnalisisClimaHoy.Image = (Image)resources.GetObject("btAnalisisClimaHoy.Image");
-            btAnalisisClimaHoy.ImageAlign = ContentAlignment.MiddleRight;
-            btAnalisisClimaHoy.Location = new Point(0, 0);
-            btAnalisisClimaHoy.Name = "btAnalisisClimaHoy";
-            btAnalisisClimaHoy.Padding = new Padding(30, 0, 0, 0);
-            btAnalisisClimaHoy.Size = new Size(251, 35);
-            btAnalisisClimaHoy.TabIndex = 1;
-            btAnalisisClimaHoy.Text = "Analisis de hoy";
-            btAnalisisClimaHoy.TextAlign = ContentAlignment.MiddleLeft;
-            btAnalisisClimaHoy.UseVisualStyleBackColor = false;
-            btAnalisisClimaHoy.Click += btAnalisisClimaHoy_Click;
             // 
             // btAnalisisdelClima
             // 
@@ -355,7 +279,7 @@
             btAnalisisdelClima.Location = new Point(0, 379);
             btAnalisisdelClima.Name = "btAnalisisdelClima";
             btAnalisisdelClima.Padding = new Padding(10, 0, 0, 0);
-            btAnalisisdelClima.Size = new Size(251, 40);
+            btAnalisisdelClima.Size = new Size(272, 40);
             btAnalisisdelClima.TabIndex = 4;
             btAnalisisdelClima.Text = "Analisis Del Clima";
             btAnalisisdelClima.TextAlign = ContentAlignment.MiddleLeft;
@@ -371,7 +295,7 @@
             subPanelAgendayCalendario.Dock = DockStyle.Top;
             subPanelAgendayCalendario.Location = new Point(0, 273);
             subPanelAgendayCalendario.Name = "subPanelAgendayCalendario";
-            subPanelAgendayCalendario.Size = new Size(251, 106);
+            subPanelAgendayCalendario.Size = new Size(272, 106);
             subPanelAgendayCalendario.TabIndex = 3;
             // 
             // btCalendario
@@ -387,7 +311,7 @@
             btCalendario.Location = new Point(0, 70);
             btCalendario.Name = "btCalendario";
             btCalendario.Padding = new Padding(30, 0, 0, 0);
-            btCalendario.Size = new Size(251, 35);
+            btCalendario.Size = new Size(272, 35);
             btCalendario.TabIndex = 3;
             btCalendario.Text = "Calendario";
             btCalendario.TextAlign = ContentAlignment.MiddleLeft;
@@ -407,7 +331,7 @@
             btRecordatorio.Location = new Point(0, 35);
             btRecordatorio.Name = "btRecordatorio";
             btRecordatorio.Padding = new Padding(30, 0, 0, 0);
-            btRecordatorio.Size = new Size(251, 35);
+            btRecordatorio.Size = new Size(272, 35);
             btRecordatorio.TabIndex = 2;
             btRecordatorio.Text = "Recordatorio";
             btRecordatorio.TextAlign = ContentAlignment.MiddleLeft;
@@ -427,7 +351,7 @@
             btTareasPendientes.Location = new Point(0, 0);
             btTareasPendientes.Name = "btTareasPendientes";
             btTareasPendientes.Padding = new Padding(30, 0, 0, 0);
-            btTareasPendientes.Size = new Size(251, 35);
+            btTareasPendientes.Size = new Size(272, 35);
             btTareasPendientes.TabIndex = 1;
             btTareasPendientes.Text = "Tareas Pendientes";
             btTareasPendientes.TextAlign = ContentAlignment.MiddleLeft;
@@ -446,7 +370,7 @@
             btAgendayCalendario.ImageAlign = ContentAlignment.MiddleRight;
             btAgendayCalendario.Location = new Point(0, 233);
             btAgendayCalendario.Name = "btAgendayCalendario";
-            btAgendayCalendario.Size = new Size(251, 40);
+            btAgendayCalendario.Size = new Size(272, 40);
             btAgendayCalendario.TabIndex = 2;
             btAgendayCalendario.Text = "Agenda y Calendario";
             btAgendayCalendario.TextAlign = ContentAlignment.MiddleLeft;
@@ -461,7 +385,7 @@
             subPanelAlmacenes.Dock = DockStyle.Top;
             subPanelAlmacenes.Location = new Point(0, 165);
             subPanelAlmacenes.Name = "subPanelAlmacenes";
-            subPanelAlmacenes.Size = new Size(251, 68);
+            subPanelAlmacenes.Size = new Size(272, 68);
             subPanelAlmacenes.TabIndex = 1;
             // 
             // btGestionarAlmacenes
@@ -477,7 +401,7 @@
             btGestionarAlmacenes.Location = new Point(0, 35);
             btGestionarAlmacenes.Name = "btGestionarAlmacenes";
             btGestionarAlmacenes.Padding = new Padding(30, 0, 0, 0);
-            btGestionarAlmacenes.Size = new Size(251, 35);
+            btGestionarAlmacenes.Size = new Size(272, 35);
             btGestionarAlmacenes.TabIndex = 2;
             btGestionarAlmacenes.Text = "Gestionar Almacenes";
             btGestionarAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
@@ -497,7 +421,7 @@
             btVerAlmacenes.Location = new Point(0, 0);
             btVerAlmacenes.Name = "btVerAlmacenes";
             btVerAlmacenes.Padding = new Padding(30, 0, 0, 0);
-            btVerAlmacenes.Size = new Size(251, 35);
+            btVerAlmacenes.Size = new Size(272, 35);
             btVerAlmacenes.TabIndex = 1;
             btVerAlmacenes.Text = "Ver Almacenes";
             btVerAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
@@ -517,7 +441,7 @@
             btAlmacenes.Location = new Point(0, 125);
             btAlmacenes.Name = "btAlmacenes";
             btAlmacenes.Padding = new Padding(10, 0, 0, 0);
-            btAlmacenes.Size = new Size(251, 40);
+            btAlmacenes.Size = new Size(272, 40);
             btAlmacenes.TabIndex = 1;
             btAlmacenes.Text = "Almacenes";
             btAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
@@ -531,7 +455,7 @@
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(251, 125);
+            panel3.Size = new Size(272, 125);
             panel3.TabIndex = 1;
             // 
             // pictureBox4
@@ -618,7 +542,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             subPanelParcelas.ResumeLayout(false);
-            subPanelAnalisisDelClima.ResumeLayout(false);
             subPanelAgendayCalendario.ResumeLayout(false);
             subPanelAlmacenes.ResumeLayout(false);
             panel3.ResumeLayout(false);
@@ -641,10 +564,6 @@
         private Button btGestionarParcelas;
         private Button btVerParcelas;
         private Button btParcelas;
-        private Panel subPanelAnalisisDelClima;
-        private Button btAnalisisClima30diass;
-        private Button btAnalisisClima15dias;
-        private Button btAnalisisClimaHoy;
         private Button btAnalisisdelClima;
         private Panel subPanelAgendayCalendario;
         private Button btCalendario;
