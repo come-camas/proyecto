@@ -13,5 +13,6 @@ namespace Gestion_Agricola.Clases
             ApplicationConfiguration.Initialize();
             Application.Run(new Principal_Prueba());
         }
+
     }
 }

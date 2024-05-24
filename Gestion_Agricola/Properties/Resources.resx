@@ -121,6 +121,9 @@
   <data name="toji-fushiguro-21946442" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toji-fushiguro-21946442.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fondo_clima" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo_clima.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="stock-vector-lgbtq-pride-heart-heart-shape-with-lgbt-progress-pride-rainbow-flag-pattern-2144873177" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stock-vector-lgbtq-pride-heart-heart-shape-with-lgbt-progress-pride-rainbow-flag-pattern-2144873177.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,5 +144,8 @@
   </data>
   <data name="817bf11558e67bc33cdf166c97a889e41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\817bf11558e67bc33cdf166c97a889e41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo_clima2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo_clima2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

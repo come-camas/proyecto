@@ -51,3 +51,36 @@ C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Form_Administracion.resources
 C:\Users\Usuario\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Principal_Prueba.resources
 C:\Users\Usuario\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Tareas_Pendientes_Crears.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\Gestion_Agricola.exe
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\Gestion_Agricola.deps.json
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\Gestion_Agricola.runtimeconfig.json
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\Gestion_Agricola.dll
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\Gestion_Agricola.pdb
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Form_Administracion.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Login.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Ventana_Gerente.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Analisis_15Dias.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Analisis_30Dias.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Analisis_Hoy.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Calendario.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Gestionar_Almacenes.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Gestionar_Parcelas.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Principal_Prueba.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Recordatorio.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.SubventanaClima.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Tareas_Pendientes.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Tareas_Pendientes_Crears.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.VerAlmacenes.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Ver_Parcelas.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Properties.Resources.resources
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.csproj.GenerateResource.cache
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.AssemblyInfoInputs.cache
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.AssemblyInfo.cs
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.csproj.CoreCompileInputs.cache
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.sourcelink.json
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.dll
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\refint\Gestion_Agricola.dll
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.pdb
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.genruntimeconfig.cache
+C:\Users\Fam. Medina\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\ref\Gestion_Agricola.dll
