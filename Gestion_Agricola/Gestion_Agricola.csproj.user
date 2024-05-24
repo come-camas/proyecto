@@ -4,9 +4,6 @@
     <Compile Update="Forms Administracion\Crear_Nomina.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms Administracion\Crear_Empleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Forms Ventana Principal\Analisis_15Dias.cs">
       <SubType>Form</SubType>
     </Compile>
