@@ -62,6 +62,7 @@
             lbfecha = new Label();
             lbhora = new Label();
             tmrFecha_Hora = new System.Windows.Forms.Timer(components);
+            pictureBox6 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -75,6 +76,7 @@
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ChildrenForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -546,6 +548,7 @@
             // ChildrenForm
             // 
             ChildrenForm.BackColor = Color.DarkSlateGray;
+            ChildrenForm.Controls.Add(pictureBox6);
             ChildrenForm.Controls.Add(lbfecha);
             ChildrenForm.Controls.Add(lbhora);
             ChildrenForm.Dock = DockStyle.Fill;
@@ -584,6 +587,17 @@
             tmrFecha_Hora.Enabled = true;
             tmrFecha_Hora.Tick += timer1_Tick;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.Azure;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(756, 560);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(74, 72);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 3;
+            pictureBox6.TabStop = false;
+            // 
             // Principal_Prueba
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -609,6 +623,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ChildrenForm.ResumeLayout(false);
             ChildrenForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 
@@ -646,5 +661,6 @@
         private System.Windows.Forms.Timer tmrFecha_Hora;
         private Boton_personalizado Bt_Nombre_de_Usuario;
         private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
     }
 }

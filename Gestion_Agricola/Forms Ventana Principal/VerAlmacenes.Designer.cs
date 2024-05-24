@@ -28,33 +28,127 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VerAlmacenes));
+            dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            label1 = new Label();
+            textBox1 = new TextBox();
+            pictureBox1 = new PictureBox();
+            cbx = new CheckBox();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // dataGridView1
             // 
-            button1.Location = new Point(715, 28);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
+            dataGridView1.Location = new Point(12, 112);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(822, 503);
+            dataGridView1.TabIndex = 1;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "ID";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Nombre";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.Width = 170;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Cantidad";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Ult. Modificacion";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.Width = 200;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Bahnschrift SemiBold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(35, 51);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 34);
+            label1.TabIndex = 2;
+            label1.Text = "ID";
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(82, 55);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(141, 30);
+            textBox1.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(229, 55);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(34, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            // 
+            // cbx
+            // 
+            cbx.AutoSize = true;
+            cbx.Font = new Font("Bahnschrift SemiBold", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            cbx.Location = new Point(618, 47);
+            cbx.Name = "cbx";
+            cbx.Size = new Size(207, 38);
+            cbx.TabIndex = 5;
+            cbx.Text = "En Existencia";
+            cbx.UseVisualStyleBackColor = true;
             // 
             // VerAlmacenes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(846, 627);
-            Controls.Add(button1);
+            Controls.Add(cbx);
+            Controls.Add(pictureBox1);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
+            Controls.Add(dataGridView1);
             Name = "VerAlmacenes";
             Text = "VerAlmacenes";
             Load += VerAlmacenes_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private Label label1;
+        private TextBox textBox1;
+        private PictureBox pictureBox1;
+        private CheckBox cbx;
     }
 }

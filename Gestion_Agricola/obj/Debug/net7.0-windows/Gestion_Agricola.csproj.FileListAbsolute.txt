@@ -51,3 +51,4 @@ C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Form_Administracion.resources
 C:\Users\Usuario\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Principal_Prueba.resources
 C:\Users\Usuario\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Tareas_Pendientes_Crears.resources
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Informacion.resources

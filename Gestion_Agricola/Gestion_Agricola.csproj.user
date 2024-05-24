@@ -52,5 +52,8 @@
     <Compile Update="Forms Ventana Principal\Ver_Parcelas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms Ventana Principal\Informacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
