@@ -109,6 +109,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(642, 427);
             Controls.Add(panelAClima);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Analisis_Hoy";
             Text = "Analisis_Hoy";
