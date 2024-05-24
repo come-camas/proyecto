@@ -8,19 +8,19 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\moise\\.nuget\\packages\\": {}
+    "C:\\Users\\Fam. Medina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
+      "projectUniqueName": "C:\\Users\\Fam. Medina\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
       "projectName": "Gestion_Agricola",
-      "projectPath": "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
-      "packagesPath": "C:\\Users\\moise\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moise\\Source\\Repos\\proyecto\\Gestion_Agricola\\obj\\",
+      "projectPath": "C:\\Users\\Fam. Medina\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
+      "packagesPath": "C:\\Users\\Fam. Medina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Fam. Medina\\Source\\Repos\\proyecto\\Gestion_Agricola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\moise\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Fam. Medina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,6 +61,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.17, 7.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.17, 7.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.17, 7.0.17]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.17, 7.0.17]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -69,7 +87,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

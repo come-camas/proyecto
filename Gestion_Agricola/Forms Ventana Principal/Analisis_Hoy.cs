@@ -16,5 +16,10 @@ namespace Gestion_Agricola
         {
             InitializeComponent();
         }
+
+        private void Analisis_Hoy_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
