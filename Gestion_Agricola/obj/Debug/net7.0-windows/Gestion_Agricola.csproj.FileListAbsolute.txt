@@ -51,3 +51,16 @@ C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Form_Administracion.resources
 C:\Users\Usuario\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Principal_Prueba.resources
 C:\Users\Usuario\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Tareas_Pendientes_Crears.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Form_Administracion.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Analisis_15Dias.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Analisis_30Dias.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Analisis_Hoy.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Calendario.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Gestionar_Almacenes.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Gestionar_Parcelas.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Principal_Prueba.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Recordatorio.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Tareas_Pendientes.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Tareas_Pendientes_Crears.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.VerAlmacenes.resources
+C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Ver_Parcelas.resources

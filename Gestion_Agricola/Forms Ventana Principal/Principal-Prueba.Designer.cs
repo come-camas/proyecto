@@ -87,8 +87,9 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1114, 49);
+            panel1.Size = new Size(1392, 61);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint_1;
             panel1.MouseDown += panel1_MouseDown;
@@ -96,9 +97,10 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(250, 3);
+            pictureBox5.Location = new Point(312, 4);
+            pictureBox5.Margin = new Padding(4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(48, 40);
+            pictureBox5.Size = new Size(60, 50);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 3;
             pictureBox5.TabStop = false;
@@ -113,9 +115,10 @@
             Bt_Nombre_de_Usuario.FlatAppearance.BorderSize = 0;
             Bt_Nombre_de_Usuario.FlatStyle = FlatStyle.Flat;
             Bt_Nombre_de_Usuario.ForeColor = Color.White;
-            Bt_Nombre_de_Usuario.Location = new Point(12, 3);
+            Bt_Nombre_de_Usuario.Location = new Point(15, 4);
+            Bt_Nombre_de_Usuario.Margin = new Padding(4);
             Bt_Nombre_de_Usuario.Name = "Bt_Nombre_de_Usuario";
-            Bt_Nombre_de_Usuario.Size = new Size(232, 43);
+            Bt_Nombre_de_Usuario.Size = new Size(290, 54);
             Bt_Nombre_de_Usuario.TabIndex = 3;
             Bt_Nombre_de_Usuario.TextColor = Color.White;
             Bt_Nombre_de_Usuario.UseVisualStyleBackColor = false;
@@ -125,9 +128,10 @@
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(986, 9);
+            pictureBox3.Location = new Point(1232, 11);
+            pictureBox3.Margin = new Padding(4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(34, 37);
+            pictureBox3.Size = new Size(42, 46);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -138,9 +142,10 @@
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1028, 9);
+            pictureBox2.Location = new Point(1285, 11);
+            pictureBox2.Margin = new Padding(4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(34, 37);
+            pictureBox2.Size = new Size(42, 46);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -151,9 +156,10 @@
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1068, 9);
+            pictureBox1.Location = new Point(1335, 11);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(34, 37);
+            pictureBox1.Size = new Size(42, 46);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -174,9 +180,10 @@
             panel2.Controls.Add(btAlmacenes);
             panel2.Controls.Add(panel3);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 49);
+            panel2.Location = new Point(0, 61);
+            panel2.Margin = new Padding(4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(272, 662);
+            panel2.Size = new Size(340, 828);
             panel2.TabIndex = 1;
             // 
             // btCerrarSesion
@@ -189,10 +196,11 @@
             btCerrarSesion.ForeColor = SystemColors.ButtonFace;
             btCerrarSesion.Image = (Image)resources.GetObject("btCerrarSesion.Image");
             btCerrarSesion.ImageAlign = ContentAlignment.MiddleRight;
-            btCerrarSesion.Location = new Point(0, 633);
+            btCerrarSesion.Location = new Point(0, 790);
+            btCerrarSesion.Margin = new Padding(4);
             btCerrarSesion.Name = "btCerrarSesion";
-            btCerrarSesion.Padding = new Padding(10, 0, 0, 0);
-            btCerrarSesion.Size = new Size(251, 40);
+            btCerrarSesion.Padding = new Padding(12, 0, 0, 0);
+            btCerrarSesion.Size = new Size(314, 50);
             btCerrarSesion.TabIndex = 8;
             btCerrarSesion.Text = "Cerrar sesion";
             btCerrarSesion.TextAlign = ContentAlignment.MiddleLeft;
@@ -205,9 +213,10 @@
             subPanelParcelas.Controls.Add(btGestionarParcelas);
             subPanelParcelas.Controls.Add(btVerParcelas);
             subPanelParcelas.Dock = DockStyle.Top;
-            subPanelParcelas.Location = new Point(0, 565);
+            subPanelParcelas.Location = new Point(0, 705);
+            subPanelParcelas.Margin = new Padding(4);
             subPanelParcelas.Name = "subPanelParcelas";
-            subPanelParcelas.Size = new Size(251, 68);
+            subPanelParcelas.Size = new Size(314, 85);
             subPanelParcelas.TabIndex = 7;
             // 
             // btGestionarParcelas
@@ -220,10 +229,11 @@
             btGestionarParcelas.ForeColor = SystemColors.ButtonHighlight;
             btGestionarParcelas.Image = (Image)resources.GetObject("btGestionarParcelas.Image");
             btGestionarParcelas.ImageAlign = ContentAlignment.MiddleRight;
-            btGestionarParcelas.Location = new Point(0, 35);
+            btGestionarParcelas.Location = new Point(0, 44);
+            btGestionarParcelas.Margin = new Padding(4);
             btGestionarParcelas.Name = "btGestionarParcelas";
-            btGestionarParcelas.Padding = new Padding(30, 0, 0, 0);
-            btGestionarParcelas.Size = new Size(251, 35);
+            btGestionarParcelas.Padding = new Padding(38, 0, 0, 0);
+            btGestionarParcelas.Size = new Size(314, 44);
             btGestionarParcelas.TabIndex = 2;
             btGestionarParcelas.Text = "Gestionar Parcelas";
             btGestionarParcelas.TextAlign = ContentAlignment.MiddleLeft;
@@ -241,9 +251,10 @@
             btVerParcelas.Image = (Image)resources.GetObject("btVerParcelas.Image");
             btVerParcelas.ImageAlign = ContentAlignment.MiddleRight;
             btVerParcelas.Location = new Point(0, 0);
+            btVerParcelas.Margin = new Padding(4);
             btVerParcelas.Name = "btVerParcelas";
-            btVerParcelas.Padding = new Padding(30, 0, 0, 0);
-            btVerParcelas.Size = new Size(251, 35);
+            btVerParcelas.Padding = new Padding(38, 0, 0, 0);
+            btVerParcelas.Size = new Size(314, 44);
             btVerParcelas.TabIndex = 1;
             btVerParcelas.Text = "Ver Parcelas";
             btVerParcelas.TextAlign = ContentAlignment.MiddleLeft;
@@ -260,10 +271,11 @@
             btParcelas.ForeColor = SystemColors.ButtonFace;
             btParcelas.Image = (Image)resources.GetObject("btParcelas.Image");
             btParcelas.ImageAlign = ContentAlignment.MiddleRight;
-            btParcelas.Location = new Point(0, 525);
+            btParcelas.Location = new Point(0, 655);
+            btParcelas.Margin = new Padding(4);
             btParcelas.Name = "btParcelas";
-            btParcelas.Padding = new Padding(10, 0, 0, 0);
-            btParcelas.Size = new Size(251, 40);
+            btParcelas.Padding = new Padding(12, 0, 0, 0);
+            btParcelas.Size = new Size(314, 50);
             btParcelas.TabIndex = 6;
             btParcelas.Text = "Parcelas";
             btParcelas.TextAlign = ContentAlignment.MiddleLeft;
@@ -277,9 +289,10 @@
             subPanelAnalisisDelClima.Controls.Add(btAnalisisClima15dias);
             subPanelAnalisisDelClima.Controls.Add(btAnalisisClimaHoy);
             subPanelAnalisisDelClima.Dock = DockStyle.Top;
-            subPanelAnalisisDelClima.Location = new Point(0, 419);
+            subPanelAnalisisDelClima.Location = new Point(0, 523);
+            subPanelAnalisisDelClima.Margin = new Padding(4);
             subPanelAnalisisDelClima.Name = "subPanelAnalisisDelClima";
-            subPanelAnalisisDelClima.Size = new Size(251, 106);
+            subPanelAnalisisDelClima.Size = new Size(314, 132);
             subPanelAnalisisDelClima.TabIndex = 5;
             // 
             // btAnalisisClima30diass
@@ -291,10 +304,11 @@
             btAnalisisClima30diass.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btAnalisisClima30diass.ForeColor = SystemColors.ButtonHighlight;
             btAnalisisClima30diass.ImageAlign = ContentAlignment.MiddleRight;
-            btAnalisisClima30diass.Location = new Point(0, 70);
+            btAnalisisClima30diass.Location = new Point(0, 88);
+            btAnalisisClima30diass.Margin = new Padding(4);
             btAnalisisClima30diass.Name = "btAnalisisClima30diass";
-            btAnalisisClima30diass.Padding = new Padding(30, 0, 0, 0);
-            btAnalisisClima30diass.Size = new Size(251, 35);
+            btAnalisisClima30diass.Padding = new Padding(38, 0, 0, 0);
+            btAnalisisClima30diass.Size = new Size(314, 44);
             btAnalisisClima30diass.TabIndex = 3;
             btAnalisisClima30diass.Text = "Analisis  en 30 dias";
             btAnalisisClima30diass.TextAlign = ContentAlignment.MiddleLeft;
@@ -310,10 +324,11 @@
             btAnalisisClima15dias.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             btAnalisisClima15dias.ForeColor = SystemColors.ButtonHighlight;
             btAnalisisClima15dias.ImageAlign = ContentAlignment.MiddleRight;
-            btAnalisisClima15dias.Location = new Point(0, 35);
+            btAnalisisClima15dias.Location = new Point(0, 44);
+            btAnalisisClima15dias.Margin = new Padding(4);
             btAnalisisClima15dias.Name = "btAnalisisClima15dias";
-            btAnalisisClima15dias.Padding = new Padding(30, 0, 0, 0);
-            btAnalisisClima15dias.Size = new Size(251, 35);
+            btAnalisisClima15dias.Padding = new Padding(38, 0, 0, 0);
+            btAnalisisClima15dias.Size = new Size(314, 44);
             btAnalisisClima15dias.TabIndex = 2;
             btAnalisisClima15dias.Text = "Analisis en 15 dias";
             btAnalisisClima15dias.TextAlign = ContentAlignment.MiddleLeft;
@@ -331,9 +346,10 @@
             btAnalisisClimaHoy.Image = (Image)resources.GetObject("btAnalisisClimaHoy.Image");
             btAnalisisClimaHoy.ImageAlign = ContentAlignment.MiddleRight;
             btAnalisisClimaHoy.Location = new Point(0, 0);
+            btAnalisisClimaHoy.Margin = new Padding(4);
             btAnalisisClimaHoy.Name = "btAnalisisClimaHoy";
-            btAnalisisClimaHoy.Padding = new Padding(30, 0, 0, 0);
-            btAnalisisClimaHoy.Size = new Size(251, 35);
+            btAnalisisClimaHoy.Padding = new Padding(38, 0, 0, 0);
+            btAnalisisClimaHoy.Size = new Size(314, 44);
             btAnalisisClimaHoy.TabIndex = 1;
             btAnalisisClimaHoy.Text = "Analisis de hoy";
             btAnalisisClimaHoy.TextAlign = ContentAlignment.MiddleLeft;
@@ -350,10 +366,11 @@
             btAnalisisdelClima.ForeColor = SystemColors.ButtonFace;
             btAnalisisdelClima.Image = (Image)resources.GetObject("btAnalisisdelClima.Image");
             btAnalisisdelClima.ImageAlign = ContentAlignment.MiddleRight;
-            btAnalisisdelClima.Location = new Point(0, 379);
+            btAnalisisdelClima.Location = new Point(0, 473);
+            btAnalisisdelClima.Margin = new Padding(4);
             btAnalisisdelClima.Name = "btAnalisisdelClima";
-            btAnalisisdelClima.Padding = new Padding(10, 0, 0, 0);
-            btAnalisisdelClima.Size = new Size(251, 40);
+            btAnalisisdelClima.Padding = new Padding(12, 0, 0, 0);
+            btAnalisisdelClima.Size = new Size(314, 50);
             btAnalisisdelClima.TabIndex = 4;
             btAnalisisdelClima.Text = "Analisis Del Clima";
             btAnalisisdelClima.TextAlign = ContentAlignment.MiddleLeft;
@@ -367,9 +384,10 @@
             subPanelAgendayCalendario.Controls.Add(btRecordatorio);
             subPanelAgendayCalendario.Controls.Add(btTareasPendientes);
             subPanelAgendayCalendario.Dock = DockStyle.Top;
-            subPanelAgendayCalendario.Location = new Point(0, 273);
+            subPanelAgendayCalendario.Location = new Point(0, 341);
+            subPanelAgendayCalendario.Margin = new Padding(4);
             subPanelAgendayCalendario.Name = "subPanelAgendayCalendario";
-            subPanelAgendayCalendario.Size = new Size(251, 106);
+            subPanelAgendayCalendario.Size = new Size(314, 132);
             subPanelAgendayCalendario.TabIndex = 3;
             // 
             // btCalendario
@@ -382,10 +400,11 @@
             btCalendario.ForeColor = SystemColors.ButtonHighlight;
             btCalendario.Image = (Image)resources.GetObject("btCalendario.Image");
             btCalendario.ImageAlign = ContentAlignment.MiddleRight;
-            btCalendario.Location = new Point(0, 70);
+            btCalendario.Location = new Point(0, 88);
+            btCalendario.Margin = new Padding(4);
             btCalendario.Name = "btCalendario";
-            btCalendario.Padding = new Padding(30, 0, 0, 0);
-            btCalendario.Size = new Size(251, 35);
+            btCalendario.Padding = new Padding(38, 0, 0, 0);
+            btCalendario.Size = new Size(314, 44);
             btCalendario.TabIndex = 3;
             btCalendario.Text = "Calendario";
             btCalendario.TextAlign = ContentAlignment.MiddleLeft;
@@ -402,10 +421,11 @@
             btRecordatorio.ForeColor = SystemColors.ButtonHighlight;
             btRecordatorio.Image = (Image)resources.GetObject("btRecordatorio.Image");
             btRecordatorio.ImageAlign = ContentAlignment.MiddleRight;
-            btRecordatorio.Location = new Point(0, 35);
+            btRecordatorio.Location = new Point(0, 44);
+            btRecordatorio.Margin = new Padding(4);
             btRecordatorio.Name = "btRecordatorio";
-            btRecordatorio.Padding = new Padding(30, 0, 0, 0);
-            btRecordatorio.Size = new Size(251, 35);
+            btRecordatorio.Padding = new Padding(38, 0, 0, 0);
+            btRecordatorio.Size = new Size(314, 44);
             btRecordatorio.TabIndex = 2;
             btRecordatorio.Text = "Recordatorio";
             btRecordatorio.TextAlign = ContentAlignment.MiddleLeft;
@@ -423,9 +443,10 @@
             btTareasPendientes.Image = (Image)resources.GetObject("btTareasPendientes.Image");
             btTareasPendientes.ImageAlign = ContentAlignment.MiddleRight;
             btTareasPendientes.Location = new Point(0, 0);
+            btTareasPendientes.Margin = new Padding(4);
             btTareasPendientes.Name = "btTareasPendientes";
-            btTareasPendientes.Padding = new Padding(30, 0, 0, 0);
-            btTareasPendientes.Size = new Size(251, 35);
+            btTareasPendientes.Padding = new Padding(38, 0, 0, 0);
+            btTareasPendientes.Size = new Size(314, 44);
             btTareasPendientes.TabIndex = 1;
             btTareasPendientes.Text = "Tareas Pendientes";
             btTareasPendientes.TextAlign = ContentAlignment.MiddleLeft;
@@ -442,9 +463,10 @@
             btAgendayCalendario.ForeColor = SystemColors.ButtonFace;
             btAgendayCalendario.Image = (Image)resources.GetObject("btAgendayCalendario.Image");
             btAgendayCalendario.ImageAlign = ContentAlignment.MiddleRight;
-            btAgendayCalendario.Location = new Point(0, 233);
+            btAgendayCalendario.Location = new Point(0, 291);
+            btAgendayCalendario.Margin = new Padding(4);
             btAgendayCalendario.Name = "btAgendayCalendario";
-            btAgendayCalendario.Size = new Size(251, 40);
+            btAgendayCalendario.Size = new Size(314, 50);
             btAgendayCalendario.TabIndex = 2;
             btAgendayCalendario.Text = "Agenda y Calendario";
             btAgendayCalendario.TextAlign = ContentAlignment.MiddleLeft;
@@ -457,9 +479,10 @@
             subPanelAlmacenes.Controls.Add(btGestionarAlmacenes);
             subPanelAlmacenes.Controls.Add(btVerAlmacenes);
             subPanelAlmacenes.Dock = DockStyle.Top;
-            subPanelAlmacenes.Location = new Point(0, 165);
+            subPanelAlmacenes.Location = new Point(0, 206);
+            subPanelAlmacenes.Margin = new Padding(4);
             subPanelAlmacenes.Name = "subPanelAlmacenes";
-            subPanelAlmacenes.Size = new Size(251, 68);
+            subPanelAlmacenes.Size = new Size(314, 85);
             subPanelAlmacenes.TabIndex = 1;
             // 
             // btGestionarAlmacenes
@@ -472,10 +495,11 @@
             btGestionarAlmacenes.ForeColor = SystemColors.ButtonHighlight;
             btGestionarAlmacenes.Image = (Image)resources.GetObject("btGestionarAlmacenes.Image");
             btGestionarAlmacenes.ImageAlign = ContentAlignment.MiddleRight;
-            btGestionarAlmacenes.Location = new Point(0, 35);
+            btGestionarAlmacenes.Location = new Point(0, 44);
+            btGestionarAlmacenes.Margin = new Padding(4);
             btGestionarAlmacenes.Name = "btGestionarAlmacenes";
-            btGestionarAlmacenes.Padding = new Padding(30, 0, 0, 0);
-            btGestionarAlmacenes.Size = new Size(251, 35);
+            btGestionarAlmacenes.Padding = new Padding(38, 0, 0, 0);
+            btGestionarAlmacenes.Size = new Size(314, 44);
             btGestionarAlmacenes.TabIndex = 2;
             btGestionarAlmacenes.Text = "Gestionar Almacenes";
             btGestionarAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
@@ -493,9 +517,10 @@
             btVerAlmacenes.Image = (Image)resources.GetObject("btVerAlmacenes.Image");
             btVerAlmacenes.ImageAlign = ContentAlignment.MiddleRight;
             btVerAlmacenes.Location = new Point(0, 0);
+            btVerAlmacenes.Margin = new Padding(4);
             btVerAlmacenes.Name = "btVerAlmacenes";
-            btVerAlmacenes.Padding = new Padding(30, 0, 0, 0);
-            btVerAlmacenes.Size = new Size(251, 35);
+            btVerAlmacenes.Padding = new Padding(38, 0, 0, 0);
+            btVerAlmacenes.Size = new Size(314, 44);
             btVerAlmacenes.TabIndex = 1;
             btVerAlmacenes.Text = "Ver Almacenes";
             btVerAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
@@ -512,10 +537,11 @@
             btAlmacenes.ForeColor = SystemColors.ButtonFace;
             btAlmacenes.Image = (Image)resources.GetObject("btAlmacenes.Image");
             btAlmacenes.ImageAlign = ContentAlignment.MiddleRight;
-            btAlmacenes.Location = new Point(0, 125);
+            btAlmacenes.Location = new Point(0, 156);
+            btAlmacenes.Margin = new Padding(4);
             btAlmacenes.Name = "btAlmacenes";
-            btAlmacenes.Padding = new Padding(10, 0, 0, 0);
-            btAlmacenes.Size = new Size(251, 40);
+            btAlmacenes.Padding = new Padding(12, 0, 0, 0);
+            btAlmacenes.Size = new Size(314, 50);
             btAlmacenes.TabIndex = 1;
             btAlmacenes.Text = "Almacenes";
             btAlmacenes.TextAlign = ContentAlignment.MiddleLeft;
@@ -528,16 +554,18 @@
             panel3.Controls.Add(pictureBox4);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
+            panel3.Margin = new Padding(4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(251, 125);
+            panel3.Size = new Size(314, 156);
             panel3.TabIndex = 1;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(0, 0);
+            pictureBox4.Margin = new Padding(4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(272, 125);
+            pictureBox4.Size = new Size(340, 156);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 2;
             pictureBox4.TabStop = false;
@@ -549,20 +577,23 @@
             ChildrenForm.Controls.Add(lbfecha);
             ChildrenForm.Controls.Add(lbhora);
             ChildrenForm.Dock = DockStyle.Fill;
-            ChildrenForm.Location = new Point(272, 49);
+            ChildrenForm.Location = new Point(340, 61);
+            ChildrenForm.Margin = new Padding(4);
             ChildrenForm.Name = "ChildrenForm";
-            ChildrenForm.Size = new Size(842, 662);
+            ChildrenForm.Size = new Size(1052, 828);
             ChildrenForm.TabIndex = 2;
             // 
             // lbfecha
             // 
             lbfecha.AutoSize = true;
             lbfecha.BackColor = Color.Transparent;
+            lbfecha.Dock = DockStyle.Fill;
             lbfecha.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
             lbfecha.ForeColor = SystemColors.Control;
-            lbfecha.Location = new Point(336, 303);
+            lbfecha.Location = new Point(0, 0);
+            lbfecha.Margin = new Padding(4, 0, 4, 0);
             lbfecha.Name = "lbfecha";
-            lbfecha.Size = new Size(139, 46);
+            lbfecha.Size = new Size(167, 55);
             lbfecha.TabIndex = 2;
             lbfecha.Text = "label3";
             // 
@@ -570,11 +601,13 @@
             // 
             lbhora.AutoSize = true;
             lbhora.BackColor = Color.Transparent;
+            lbhora.Dock = DockStyle.Fill;
             lbhora.Font = new Font("Arial Rounded MT Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
             lbhora.ForeColor = SystemColors.Control;
-            lbhora.Location = new Point(296, 239);
+            lbhora.Location = new Point(0, 0);
+            lbhora.Margin = new Padding(4, 0, 4, 0);
             lbhora.Name = "lbhora";
-            lbhora.Size = new Size(164, 70);
+            lbhora.Size = new Size(196, 83);
             lbhora.TabIndex = 0;
             lbhora.Text = "hora";
             // 
@@ -585,13 +618,14 @@
             // 
             // Principal_Prueba
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1114, 711);
+            ClientSize = new Size(1392, 889);
             Controls.Add(ChildrenForm);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             Name = "Principal_Prueba";
             Text = "Principal_Prueba";
             panel1.ResumeLayout(false);
