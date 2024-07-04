@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestionar_Almacenes));
             groupBox1 = new GroupBox();
-            txtCodigo = new TextBox();
+            txtID = new TextBox();
             label3 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
@@ -38,7 +38,7 @@
             btCambiarImagen = new Button();
             btEliminar = new Button();
             btGuardar = new Button();
-            textBox2 = new TextBox();
+            txtCantidad = new TextBox();
             label2 = new Label();
             label1 = new Label();
             groupBox1.SuspendLayout();
@@ -48,7 +48,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(txtCodigo);
+            groupBox1.Controls.Add(txtID);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(pictureBox2);
             groupBox1.Controls.Add(pictureBox1);
@@ -56,7 +56,7 @@
             groupBox1.Controls.Add(btCambiarImagen);
             groupBox1.Controls.Add(btEliminar);
             groupBox1.Controls.Add(btGuardar);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(txtCantidad);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(12, 12);
@@ -64,15 +64,16 @@
             groupBox1.Size = new Size(822, 603);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
+            groupBox1.Enter += groupBox1_Enter;
             // 
-            // txtCodigo
+            // txtID
             // 
-            txtCodigo.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCodigo.ForeColor = SystemColors.ActiveCaptionText;
-            txtCodigo.Location = new Point(121, 102);
-            txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(207, 30);
-            txtCodigo.TabIndex = 11;
+            txtID.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtID.ForeColor = SystemColors.ActiveCaptionText;
+            txtID.Location = new Point(121, 102);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(207, 30);
+            txtID.TabIndex = 11;
             // 
             // label3
             // 
@@ -110,10 +111,12 @@
             cmbxProducto.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cmbxProducto.ForeColor = SystemColors.ActiveCaptionText;
             cmbxProducto.FormattingEnabled = true;
+            cmbxProducto.Items.AddRange(new object[] { "papas", "zanahorias", "arroz", "frijol" });
             cmbxProducto.Location = new Point(118, 236);
             cmbxProducto.Name = "cmbxProducto";
             cmbxProducto.Size = new Size(207, 32);
             cmbxProducto.TabIndex = 7;
+            cmbxProducto.SelectedIndexChanged += cmbxProducto_SelectedIndexChanged;
             // 
             // btCambiarImagen
             // 
@@ -144,15 +147,16 @@
             btGuardar.TabIndex = 4;
             btGuardar.Text = "Guardar";
             btGuardar.UseVisualStyleBackColor = true;
+            btGuardar.Click += btGuardar_Click;
             // 
-            // textBox2
+            // txtCantidad
             // 
-            textBox2.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = SystemColors.ActiveCaptionText;
-            textBox2.Location = new Point(124, 361);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(207, 30);
-            textBox2.TabIndex = 3;
+            txtCantidad.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCantidad.ForeColor = SystemColors.ActiveCaptionText;
+            txtCantidad.Location = new Point(124, 361);
+            txtCantidad.Name = "txtCantidad";
+            txtCantidad.Size = new Size(207, 30);
+            txtCantidad.TabIndex = 3;
             // 
             // label2
             // 
@@ -200,10 +204,10 @@
         private Button btCambiarImagen;
         private Button btEliminar;
         private Button btGuardar;
-        private TextBox textBox2;
+        private TextBox txtCantidad;
         private Label label2;
         private Label label1;
-        private TextBox txtCodigo;
+        private TextBox txtID;
         private Label label3;
     }
 }

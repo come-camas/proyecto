@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VerAlmacenes));
-            dataGridView1 = new DataGridView();
+            dtgAlmacenes = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -40,20 +40,21 @@
             cbx = new CheckBox();
             textBox2 = new TextBox();
             label2 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgAlmacenes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dtgAlmacenes
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
-            dataGridView1.Location = new Point(12, 112);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(822, 503);
-            dataGridView1.TabIndex = 1;
+            dtgAlmacenes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgAlmacenes.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
+            dtgAlmacenes.Location = new Point(12, 112);
+            dtgAlmacenes.Name = "dtgAlmacenes";
+            dtgAlmacenes.RowHeadersWidth = 51;
+            dtgAlmacenes.RowTemplate.Height = 29;
+            dtgAlmacenes.Size = new Size(822, 503);
+            dtgAlmacenes.TabIndex = 1;
+            dtgAlmacenes.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Column1
             // 
@@ -151,11 +152,11 @@
             Controls.Add(pictureBox1);
             Controls.Add(textBox1);
             Controls.Add(label1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dtgAlmacenes);
             Name = "VerAlmacenes";
             Text = "VerAlmacenes";
             Load += VerAlmacenes_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgAlmacenes).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -163,7 +164,7 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dtgAlmacenes;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;

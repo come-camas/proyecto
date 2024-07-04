@@ -65,7 +65,14 @@ C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\G
 C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.VerAlmacenes.resources
 C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Ver_Parcelas.resources
 C:\Users\moise\source\repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Crear_Nomina.resources
-C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Crear_Empleado.resources
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Crear_Nomina.resources
 C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Informacion.resources
 C:\Users\moise\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.Informacion.resources
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_Agricola.csproj.AssemblyReference.cache
+C:\Users\Usuario\Source\Repos\proyecto\Gestion_Agricola\obj\Debug\net7.0-windows\Gestion_.0DC7C0E5.Up2Date
