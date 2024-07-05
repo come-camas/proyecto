@@ -121,7 +121,8 @@ namespace Gestion_Agricola
 
         private void btAnalisisdelClima_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Analisis_Hoy());
+            MessageBox.Show("Este proceso no se ha terminado...");
+            //AbrirFormHijo(new Analisis_Hoy());
         }
 
         private void btParcelas_Click(object sender, EventArgs e)
@@ -162,14 +163,16 @@ namespace Gestion_Agricola
 
         private void btCalendario_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Calendario());
-            ocultar();
+            MessageBox.Show("Este proceso no se ha terminado...");
+            //AbrirFormHijo(new Calendario());
+            //ocultar();
         }
 
         private void btAnalisisClimaHoy_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Analisis_Hoy());
-            ocultar();
+            MessageBox.Show("Este proceso no se ha terminado...");
+            //AbrirFormHijo(new Analisis_Hoy());
+            //ocultar();
         }
 
         private void btAnalisisClima15dias_Click(object sender, EventArgs e)
@@ -186,8 +189,9 @@ namespace Gestion_Agricola
 
         private void btVerParcelas_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Ver_Parcelas());
-            ocultar();
+            MessageBox.Show("Este proceso no se ha terminado...");
+            //AbrirFormHijo(new Ver_Parcelas());
+            //ocultar();
         }
 
         private void btGestionarParcelas_Click(object sender, EventArgs e)
@@ -225,6 +229,10 @@ namespace Gestion_Agricola
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CambiarColor();
+        }
+        public void CambiarColor()
         {
             if (cmbxColor.Text == "Verde")
             {
