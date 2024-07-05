@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal_Prueba));
             panel1 = new Panel();
+            cmbxColor = new ComboBox();
             pictureBox5 = new PictureBox();
             Bt_Nombre_de_Usuario = new Boton_personalizado();
             pictureBox3 = new PictureBox();
@@ -55,7 +56,6 @@
             panel3 = new Panel();
             pictureBox4 = new PictureBox();
             ChildrenForm = new Panel();
-            pictureBox6 = new PictureBox();
             lbfecha = new Label();
             lbhora = new Label();
             tmrFecha_Hora = new System.Windows.Forms.Timer(components);
@@ -71,12 +71,12 @@
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ChildrenForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Teal;
+            panel1.BackColor = Color.MediumVioletRed;
+            panel1.Controls.Add(cmbxColor);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(Bt_Nombre_de_Usuario);
             panel1.Controls.Add(pictureBox3);
@@ -89,6 +89,16 @@
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint_1;
             panel1.MouseDown += panel1_MouseDown;
+            // 
+            // cmbxColor
+            // 
+            cmbxColor.FormattingEnabled = true;
+            cmbxColor.Items.AddRange(new object[] { "Oscuro", "Verde", "Morado", "Rosa" });
+            cmbxColor.Location = new Point(304, 11);
+            cmbxColor.Name = "cmbxColor";
+            cmbxColor.Size = new Size(151, 28);
+            cmbxColor.TabIndex = 3;
+            cmbxColor.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // pictureBox5
             // 
@@ -120,6 +130,7 @@
             // pictureBox3
             // 
             pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox3.BackColor = SystemColors.ButtonHighlight;
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(986, 9);
@@ -133,6 +144,7 @@
             // pictureBox2
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox2.BackColor = SystemColors.ControlLightLight;
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(1028, 9);
@@ -146,6 +158,7 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox1.BackColor = SystemColors.ControlLightLight;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(1068, 9);
@@ -159,7 +172,7 @@
             // panel2
             // 
             panel2.AutoScroll = true;
-            panel2.BackColor = Color.CadetBlue;
+            panel2.BackColor = Color.HotPink;
             panel2.Controls.Add(btCerrarSesion);
             panel2.Controls.Add(subPanelParcelas);
             panel2.Controls.Add(btParcelas);
@@ -177,7 +190,7 @@
             // 
             // btCerrarSesion
             // 
-            btCerrarSesion.BackColor = Color.DarkCyan;
+            btCerrarSesion.BackColor = Color.MediumVioletRed;
             btCerrarSesion.Dock = DockStyle.Top;
             btCerrarSesion.FlatAppearance.BorderSize = 0;
             btCerrarSesion.FlatStyle = FlatStyle.Flat;
@@ -208,7 +221,7 @@
             // 
             // btGestionarParcelas
             // 
-            btGestionarParcelas.BackColor = Color.CadetBlue;
+            btGestionarParcelas.BackColor = Color.HotPink;
             btGestionarParcelas.Dock = DockStyle.Top;
             btGestionarParcelas.FlatAppearance.BorderSize = 0;
             btGestionarParcelas.FlatStyle = FlatStyle.Flat;
@@ -228,7 +241,7 @@
             // 
             // btVerParcelas
             // 
-            btVerParcelas.BackColor = Color.CadetBlue;
+            btVerParcelas.BackColor = Color.HotPink;
             btVerParcelas.Dock = DockStyle.Top;
             btVerParcelas.FlatAppearance.BorderSize = 0;
             btVerParcelas.FlatStyle = FlatStyle.Flat;
@@ -248,7 +261,7 @@
             // 
             // btParcelas
             // 
-            btParcelas.BackColor = Color.DarkCyan;
+            btParcelas.BackColor = Color.MediumVioletRed;
             btParcelas.Dock = DockStyle.Top;
             btParcelas.FlatAppearance.BorderSize = 0;
             btParcelas.FlatStyle = FlatStyle.Flat;
@@ -268,7 +281,7 @@
             // 
             // btAnalisisdelClima
             // 
-            btAnalisisdelClima.BackColor = Color.DarkCyan;
+            btAnalisisdelClima.BackColor = Color.MediumVioletRed;
             btAnalisisdelClima.Dock = DockStyle.Top;
             btAnalisisdelClima.FlatAppearance.BorderSize = 0;
             btAnalisisdelClima.FlatStyle = FlatStyle.Flat;
@@ -300,7 +313,7 @@
             // 
             // btCalendario
             // 
-            btCalendario.BackColor = Color.CadetBlue;
+            btCalendario.BackColor = Color.HotPink;
             btCalendario.Dock = DockStyle.Top;
             btCalendario.FlatAppearance.BorderSize = 0;
             btCalendario.FlatStyle = FlatStyle.Flat;
@@ -320,7 +333,7 @@
             // 
             // btRecordatorio
             // 
-            btRecordatorio.BackColor = Color.CadetBlue;
+            btRecordatorio.BackColor = Color.HotPink;
             btRecordatorio.Dock = DockStyle.Top;
             btRecordatorio.FlatAppearance.BorderSize = 0;
             btRecordatorio.FlatStyle = FlatStyle.Flat;
@@ -340,7 +353,7 @@
             // 
             // btTareasPendientes
             // 
-            btTareasPendientes.BackColor = Color.CadetBlue;
+            btTareasPendientes.BackColor = Color.HotPink;
             btTareasPendientes.Dock = DockStyle.Top;
             btTareasPendientes.FlatAppearance.BorderSize = 0;
             btTareasPendientes.FlatStyle = FlatStyle.Flat;
@@ -360,7 +373,7 @@
             // 
             // btAgendayCalendario
             // 
-            btAgendayCalendario.BackColor = Color.DarkCyan;
+            btAgendayCalendario.BackColor = Color.MediumVioletRed;
             btAgendayCalendario.Dock = DockStyle.Top;
             btAgendayCalendario.FlatAppearance.BorderSize = 0;
             btAgendayCalendario.FlatStyle = FlatStyle.Flat;
@@ -390,7 +403,7 @@
             // 
             // btGestionarAlmacenes
             // 
-            btGestionarAlmacenes.BackColor = Color.CadetBlue;
+            btGestionarAlmacenes.BackColor = Color.HotPink;
             btGestionarAlmacenes.Dock = DockStyle.Top;
             btGestionarAlmacenes.FlatAppearance.BorderSize = 0;
             btGestionarAlmacenes.FlatStyle = FlatStyle.Flat;
@@ -410,7 +423,7 @@
             // 
             // btVerAlmacenes
             // 
-            btVerAlmacenes.BackColor = Color.CadetBlue;
+            btVerAlmacenes.BackColor = Color.HotPink;
             btVerAlmacenes.Dock = DockStyle.Top;
             btVerAlmacenes.FlatAppearance.BorderSize = 0;
             btVerAlmacenes.FlatStyle = FlatStyle.Flat;
@@ -430,7 +443,7 @@
             // 
             // btAlmacenes
             // 
-            btAlmacenes.BackColor = Color.DarkCyan;
+            btAlmacenes.BackColor = Color.MediumVioletRed;
             btAlmacenes.Dock = DockStyle.Top;
             btAlmacenes.FlatAppearance.BorderSize = 0;
             btAlmacenes.FlatStyle = FlatStyle.Flat;
@@ -460,6 +473,7 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.BackColor = Color.HotPink;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(0, 0);
             pictureBox4.Name = "pictureBox4";
@@ -471,8 +485,7 @@
             // 
             // ChildrenForm
             // 
-            ChildrenForm.BackColor = Color.DarkSlateGray;
-            ChildrenForm.Controls.Add(pictureBox6);
+            ChildrenForm.BackColor = Color.Plum;
             ChildrenForm.Controls.Add(lbfecha);
             ChildrenForm.Controls.Add(lbhora);
             ChildrenForm.Dock = DockStyle.Fill;
@@ -482,21 +495,9 @@
             ChildrenForm.TabIndex = 2;
             ChildrenForm.Paint += ChildrenForm_Paint;
             // 
-            // pictureBox6
-            // 
-            pictureBox6.BackColor = Color.Azure;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(772, 577);
-            pictureBox6.Margin = new Padding(2);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(59, 58);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 3;
-            pictureBox6.TabStop = false;
-            pictureBox6.Click += pictureBox6_Click;
-            // 
             // lbfecha
             // 
+            lbfecha.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             lbfecha.AutoSize = true;
             lbfecha.BackColor = Color.Transparent;
             lbfecha.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
@@ -509,6 +510,7 @@
             // 
             // lbhora
             // 
+            lbhora.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             lbhora.AutoSize = true;
             lbhora.BackColor = Color.Transparent;
             lbhora.Font = new Font("Arial Rounded MT Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
@@ -548,7 +550,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ChildrenForm.ResumeLayout(false);
             ChildrenForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 
@@ -582,6 +583,6 @@
         private System.Windows.Forms.Timer tmrFecha_Hora;
         private Boton_personalizado Bt_Nombre_de_Usuario;
         private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
+        private ComboBox cmbxColor;
     }
 }

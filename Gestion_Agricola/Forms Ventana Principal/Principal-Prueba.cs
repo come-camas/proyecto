@@ -18,6 +18,8 @@ namespace Gestion_Agricola
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+
+
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         public Principal_Prueba()
         {
@@ -66,7 +68,7 @@ namespace Gestion_Agricola
         {
             if (activeForm != null)
 
-            activeForm.Close();
+                activeForm.Close();
             activeForm = hijo;
             hijo.TopLevel = false;
             hijo.FormBorderStyle = FormBorderStyle.None;
@@ -119,7 +121,8 @@ namespace Gestion_Agricola
 
         private void btAnalisisdelClima_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Analisis_Hoy());
+            MessageBox.Show("Este proceso no se ha terminado...");
+            //AbrirFormHijo(new Analisis_Hoy());
         }
 
         private void btParcelas_Click(object sender, EventArgs e)
@@ -160,14 +163,16 @@ namespace Gestion_Agricola
 
         private void btCalendario_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Calendario());
-            ocultar();
+            MessageBox.Show("Este proceso no se ha terminado...");
+            //AbrirFormHijo(new Calendario());
+            //ocultar();
         }
 
         private void btAnalisisClimaHoy_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Analisis_Hoy());
-            ocultar();
+            MessageBox.Show("Este proceso no se ha terminado...");
+            //AbrirFormHijo(new Analisis_Hoy());
+            //ocultar();
         }
 
         private void btAnalisisClima15dias_Click(object sender, EventArgs e)
@@ -184,8 +189,9 @@ namespace Gestion_Agricola
 
         private void btVerParcelas_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Ver_Parcelas());
-            ocultar();
+            MessageBox.Show("Este proceso no se ha terminado...");
+            //AbrirFormHijo(new Ver_Parcelas());
+            //ocultar();
         }
 
         private void btGestionarParcelas_Click(object sender, EventArgs e)
@@ -208,8 +214,7 @@ namespace Gestion_Agricola
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form_Administracion a = new Form_Administracion();
-            a.Show();
+
         }
 
         private void ChildrenForm_Paint(object sender, PaintEventArgs e)
@@ -219,8 +224,113 @@ namespace Gestion_Agricola
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Informacion s=new Informacion();
+            Informacion s = new Informacion();
             s.ShowDialog();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CambiarColor();
+        }
+        public void CambiarColor()
+        {
+            if (cmbxColor.Text == "Verde")
+            {
+                panel1.BackColor = Color.Teal;
+
+                btAlmacenes.BackColor = Color.DarkCyan;
+                btAgendayCalendario.BackColor = Color.DarkCyan;
+                btAnalisisdelClima.BackColor = Color.DarkCyan;
+                btParcelas.BackColor = Color.DarkCyan;
+                btCerrarSesion.BackColor = Color.DarkCyan;
+                pictureBox4.BackColor = Color.CadetBlue;
+                panel3.BackColor = Color.CadetBlue;
+                subPanelAlmacenes.BackColor = Color.CadetBlue;
+                subPanelAgendayCalendario.BackColor = Color.CadetBlue;
+                subPanelParcelas.BackColor = Color.CadetBlue;
+                panel2.BackColor = Color.CadetBlue;
+                ChildrenForm.BackColor = Color.DarkSlateGray;
+
+                btVerAlmacenes.BackColor = Color.CadetBlue;
+                btGestionarAlmacenes.BackColor = Color.CadetBlue;
+                btTareasPendientes.BackColor = Color.CadetBlue;
+                btRecordatorio.BackColor = Color.CadetBlue;
+                btCalendario.BackColor = Color.CadetBlue;
+                btVerParcelas.BackColor = Color.CadetBlue;
+                btGestionarParcelas.BackColor = Color.CadetBlue;
+            }
+            else if (cmbxColor.Text == "Oscuro")
+            {
+
+                panel1.BackColor = Color.FromArgb(64, 64, 64);
+                btAlmacenes.BackColor = Color.DimGray;
+                btAgendayCalendario.BackColor = Color.DimGray;
+                btAnalisisdelClima.BackColor = Color.DimGray;
+                btParcelas.BackColor = Color.DimGray;
+                btCerrarSesion.BackColor = Color.DimGray;
+                pictureBox4.BackColor = Color.Silver;
+                subPanelAlmacenes.BackColor = Color.Silver;
+                subPanelAgendayCalendario.BackColor = Color.Silver;
+                subPanelParcelas.BackColor = Color.Silver;
+                panel2.BackColor = Color.Silver;
+                ChildrenForm.BackColor = Color.DimGray;
+
+                btVerAlmacenes.BackColor = Color.Silver;
+                btGestionarAlmacenes.BackColor = Color.Silver;
+                btTareasPendientes.BackColor = Color.Silver;
+                btRecordatorio.BackColor = Color.Silver;
+                btCalendario.BackColor = Color.Silver;
+                btVerParcelas.BackColor = Color.Silver;
+                btGestionarParcelas.BackColor = Color.Silver;
+            }
+            else if (cmbxColor.Text == "Morado")
+            {
+
+                panel1.BackColor = Color.Indigo;
+                btAlmacenes.BackColor = Color.Indigo;
+                btAgendayCalendario.BackColor = Color.Indigo;
+                btAnalisisdelClima.BackColor = Color.Indigo;
+                btParcelas.BackColor = Color.Indigo;
+                btCerrarSesion.BackColor = Color.Indigo;
+                pictureBox4.BackColor = Color.MediumPurple;
+                subPanelAlmacenes.BackColor = Color.MediumPurple;
+                subPanelAgendayCalendario.BackColor = Color.MediumPurple;
+                subPanelParcelas.BackColor = Color.MediumPurple;
+                panel2.BackColor = Color.MediumPurple;
+                ChildrenForm.BackColor = Color.BlueViolet;
+
+                btVerAlmacenes.BackColor = Color.MediumPurple;
+                btGestionarAlmacenes.BackColor = Color.MediumPurple;
+                btTareasPendientes.BackColor = Color.MediumPurple;
+                btRecordatorio.BackColor = Color.MediumPurple;
+                btCalendario.BackColor = Color.MediumPurple;
+                btVerParcelas.BackColor = Color.MediumPurple;
+                btGestionarParcelas.BackColor = Color.MediumPurple;
+            }
+            else if (cmbxColor.Text == "Rosa")
+            {
+
+                panel1.BackColor = Color.MediumVioletRed;
+                btAlmacenes.BackColor = Color.MediumVioletRed;
+                btAgendayCalendario.BackColor = Color.MediumVioletRed;
+                btAnalisisdelClima.BackColor = Color.MediumVioletRed;
+                btParcelas.BackColor = Color.MediumVioletRed;
+                btCerrarSesion.BackColor = Color.MediumVioletRed;
+                pictureBox4.BackColor = Color.HotPink;
+                subPanelAlmacenes.BackColor = Color.HotPink;
+                subPanelAgendayCalendario.BackColor = Color.HotPink;
+                subPanelParcelas.BackColor = Color.HotPink;
+                panel2.BackColor = Color.HotPink;
+                ChildrenForm.BackColor = Color.Plum;
+
+                btVerAlmacenes.BackColor = Color.HotPink;
+                btGestionarAlmacenes.BackColor = Color.HotPink;
+                btTareasPendientes.BackColor = Color.HotPink;
+                btRecordatorio.BackColor = Color.HotPink;
+                btCalendario.BackColor = Color.HotPink;
+                btVerParcelas.BackColor = Color.HotPink;
+                btGestionarParcelas.BackColor = Color.HotPink;
+            }
         }
     }
 }
