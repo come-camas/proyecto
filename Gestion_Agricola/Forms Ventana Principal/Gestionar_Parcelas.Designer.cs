@@ -151,7 +151,7 @@
             // 
             // btcrearparcelas
             // 
-            btcrearparcelas.BackColor = Color.Khaki;
+            btcrearparcelas.BackColor = Color.LightSeaGreen;
             btcrearparcelas.FlatStyle = FlatStyle.Flat;
             btcrearparcelas.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btcrearparcelas.ForeColor = SystemColors.ActiveCaptionText;

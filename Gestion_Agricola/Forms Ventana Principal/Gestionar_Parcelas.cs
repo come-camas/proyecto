@@ -54,7 +54,10 @@ namespace Gestion_Agricola
 
                 MessageBox.Show(ex.Message);
             }
-
+            cmbxCultivo.Text = "";
+            combolimpieza.Text = "";
+            combofumigacion.Text = "";
+            combotiempocosecha.Text = "";
         }
         public string crearCodigo(string contador)
         {

@@ -33,6 +33,7 @@ namespace Gestion_Agricola
         }
         public void Insertar_Datos()
         {
+            
             try
             {
                 conex2.conex.Close();
@@ -56,7 +57,9 @@ namespace Gestion_Agricola
                 MessageBox.Show(e.Message);
                 throw;
             }
-
+            txtID.Text = "";
+            txtCantidad.Text = "";
+            cmbxProducto.Text = "";
         }
 
         private void cmbxProducto_SelectedIndexChanged(object sender, EventArgs e)

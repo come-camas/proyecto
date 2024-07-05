@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bYv7xAt8rqlRYZvl6CTEd9J8rT0rDu7wj5XFGKnm31PCGBytV0wQS3hRCVvf0CBTF4Pv/ruqfxy6EPzhv+bUjQ==",
+  "dgSpecHash": "I2bfzu8SQ4rdatG3dYdHCO353BafLCXzMKczamovPqdIXY7xufLs5HVjcJcJhGM2AEDDAQWydqB5EvLZZaPvyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Source\\Repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\proyecto\\Gestion_Agricola\\Gestion_Agricola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
