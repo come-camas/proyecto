@@ -44,5 +44,16 @@ namespace Sistema_Nomina.Clases
             }
 
         }
+
+        
+/* create database GestionAgricola
+
+use GestionAgricola
+go
+create table Parcelas(Codigo varchar(20),Cultivo varchar(20),Fecha_abono varchar(20),Limpieza varchar(20),Fumigacion varchar(20),Tiempo_Cosecha varchar(20))
+
+create table producto(ID varchar(10), producto varchar(15), cantidad int, fechaMod varchar(12))
+
+*/
     }
 }

@@ -179,14 +179,14 @@ namespace Gestion_Agricola
 
         private void btAnalisisClima15dias_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Analisis_15Dias());
-            ocultar();
+            //AbrirFormHijo(new Analisis_15Dias());
+            //ocultar();
         }
 
         private void btAnalisisClima30diass_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Analisis_30Dias());
-            ocultar();
+            //AbrirFormHijo(new Analisis_30Dias());
+            //ocultar();
         }
 
         private void btVerParcelas_Click(object sender, EventArgs e)
@@ -226,8 +226,8 @@ namespace Gestion_Agricola
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Informacion s = new Informacion();
-            s.ShowDialog();
+            //Informacion s = new Informacion();
+            //s.ShowDialog();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -261,15 +261,6 @@ namespace Gestion_Agricola
                 btCalendario.BackColor = Color.CadetBlue;
                 btVerParcelas.BackColor = Color.CadetBlue;
                 btGestionarParcelas.BackColor = Color.CadetBlue;
-
-                Gestionar_Parcelas s=new Gestionar_Parcelas();
-
-                s.pngt1.BackColor = Color.CadetBlue;
-                s.pngt1.ForeColor = Color.CadetBlue;
-                s.pngt2.BackColor = Color.CadetBlue;
-                s.pngt3.BackColor = Color.CadetBlue;
-                s.pngt4.BackColor = Color.CadetBlue;
-                s.pngt5.BackColor = Color.CadetBlue;
             }
             else if (cmbxColor.Text == "Oscuro")
             {
