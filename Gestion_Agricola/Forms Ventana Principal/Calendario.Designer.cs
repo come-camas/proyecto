@@ -30,10 +30,10 @@
         {
             dataGridView1 = new DataGridView();
             fechaI = new DataGridViewTextBoxColumn();
-            nivelPrioridad = new DataGridViewTextBoxColumn();
-            Detalles = new DataGridViewTextBoxColumn();
-            estado_Tarea = new DataGridViewTextBoxColumn();
+            Nivel_P = new DataGridViewTextBoxColumn();
             Descripcion = new DataGridViewTextBoxColumn();
+            des_tar = new DataGridViewTextBoxColumn();
+            Column1 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -41,56 +41,53 @@
             // 
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { fechaI, nivelPrioridad, Detalles, estado_Tarea, Descripcion });
-            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { fechaI, Nivel_P, Descripcion, des_tar, Column1 });
+            dataGridView1.Location = new Point(12, 32);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(691, 228);
+            dataGridView1.Size = new Size(746, 228);
             dataGridView1.TabIndex = 1;
             // 
             // fechaI
             // 
-            fechaI.HeaderText = "Dias";
+            fechaI.HeaderText = "Fecha Emision";
             fechaI.Name = "fechaI";
             fechaI.ReadOnly = true;
             fechaI.Resizable = DataGridViewTriState.False;
             // 
-            // nivelPrioridad
+            // Nivel_P
             // 
-            nivelPrioridad.HeaderText = "nivel_Prioridad";
-            nivelPrioridad.Name = "nivelPrioridad";
-            nivelPrioridad.ReadOnly = true;
-            nivelPrioridad.Resizable = DataGridViewTriState.False;
-            // 
-            // Detalles
-            // 
-            Detalles.HeaderText = "Detalles";
-            Detalles.Name = "Detalles";
-            Detalles.ReadOnly = true;
-            Detalles.Resizable = DataGridViewTriState.False;
-            Detalles.Width = 150;
-            // 
-            // estado_Tarea
-            // 
-            estado_Tarea.HeaderText = "Estado Tarea";
-            estado_Tarea.Name = "estado_Tarea";
-            estado_Tarea.ReadOnly = true;
-            estado_Tarea.Resizable = DataGridViewTriState.False;
+            Nivel_P.HeaderText = "Nivel P";
+            Nivel_P.Name = "Nivel_P";
+            Nivel_P.ReadOnly = true;
+            Nivel_P.Resizable = DataGridViewTriState.False;
             // 
             // Descripcion
             // 
-            Descripcion.HeaderText = "Descripcion Tarea";
+            Descripcion.HeaderText = "Nom Tarea";
             Descripcion.Name = "Descripcion";
             Descripcion.ReadOnly = true;
             Descripcion.Resizable = DataGridViewTriState.False;
-            Descripcion.Width = 200;
+            // 
+            // des_tar
+            // 
+            des_tar.HeaderText = "Descripcion Tarea";
+            des_tar.Name = "des_tar";
+            des_tar.ReadOnly = true;
+            des_tar.Width = 300;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "Fecha Cancelacion";
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
             // 
             // Calendario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(740, 470);
+            ClientSize = new Size(770, 470);
             Controls.Add(dataGridView1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Calendario";
@@ -104,9 +101,9 @@
 
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn fechaI;
-        private DataGridViewTextBoxColumn nivelPrioridad;
-        private DataGridViewTextBoxColumn Detalles;
-        private DataGridViewTextBoxColumn estado_Tarea;
+        private DataGridViewTextBoxColumn Nivel_P;
         private DataGridViewTextBoxColumn Descripcion;
+        private DataGridViewTextBoxColumn des_tar;
+        private DataGridViewTextBoxColumn Column1;
     }
 }
