@@ -74,6 +74,7 @@
             txtID.Name = "txtID";
             txtID.Size = new Size(207, 30);
             txtID.TabIndex = 11;
+            txtID.TextChanged += txtID_TextChanged;
             // 
             // label3
             // 
@@ -127,6 +128,7 @@
             btCambiarImagen.TabIndex = 6;
             btCambiarImagen.Text = "Cambiar Imagen";
             btCambiarImagen.UseVisualStyleBackColor = true;
+            btCambiarImagen.Click += btCambiarImagen_Click;
             // 
             // btEliminar
             // 
