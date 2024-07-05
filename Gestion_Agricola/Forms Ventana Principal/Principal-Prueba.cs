@@ -15,6 +15,7 @@ namespace Gestion_Agricola
 {
     public partial class Principal_Prueba : Form
     {
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -24,6 +25,7 @@ namespace Gestion_Agricola
         public Principal_Prueba()
         {
             InitializeComponent();
+            cmbxColor.Text = "Oscuro";
             cerrar();
         }
 
@@ -234,6 +236,7 @@ namespace Gestion_Agricola
         }
         public void CambiarColor()
         {
+            
             if (cmbxColor.Text == "Verde")
             {
                 panel1.BackColor = Color.Teal;
@@ -258,6 +261,15 @@ namespace Gestion_Agricola
                 btCalendario.BackColor = Color.CadetBlue;
                 btVerParcelas.BackColor = Color.CadetBlue;
                 btGestionarParcelas.BackColor = Color.CadetBlue;
+
+                Gestionar_Parcelas s=new Gestionar_Parcelas();
+
+                s.pngt1.BackColor = Color.CadetBlue;
+                s.pngt1.ForeColor = Color.CadetBlue;
+                s.pngt2.BackColor = Color.CadetBlue;
+                s.pngt3.BackColor = Color.CadetBlue;
+                s.pngt4.BackColor = Color.CadetBlue;
+                s.pngt5.BackColor = Color.CadetBlue;
             }
             else if (cmbxColor.Text == "Oscuro")
             {

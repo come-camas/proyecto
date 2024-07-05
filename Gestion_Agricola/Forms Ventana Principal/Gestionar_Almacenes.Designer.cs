@@ -128,6 +128,7 @@
             btCambiarImagen.TabIndex = 6;
             btCambiarImagen.Text = "Cambiar Imagen";
             btCambiarImagen.UseVisualStyleBackColor = true;
+            btCambiarImagen.Click += btCambiarImagen_Click;
             // 
             // btEliminar
             // 

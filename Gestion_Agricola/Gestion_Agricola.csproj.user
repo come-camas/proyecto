@@ -7,19 +7,19 @@
     <Compile Update="Forms Administracion\Crear_Nomina.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms Ventana Principal\Analisis_15Dias.cs">
+    <Compile Update="Procesos por terminar\Analisis_15Dias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms Ventana Principal\Analisis_30Dias.cs">
+    <Compile Update="Procesos por terminar\Analisis_30Dias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms Ventana Principal\Analisis_Hoy.cs">
+    <Compile Update="Procesos por terminar\Analisis_Hoy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Boton_personalizado.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Forms Ventana Principal\Calendario.cs">
+    <Compile Update="Procesos por terminar\Calendario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms Administracion\Form-Administracion.cs">
@@ -55,10 +55,10 @@
     <Compile Update="Forms Ventana Principal\VerAlmacenes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms Ventana Principal\Ver_Parcelas.cs">
+    <Compile Update="Procesos por terminar\Ver_Parcelas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms Ventana Principal\Informacion.cs">
+    <Compile Update="Procesos por terminar\Informacion.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

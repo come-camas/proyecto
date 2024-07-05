@@ -87,13 +87,18 @@ namespace Gestion_Agricola
         {
             contador = DateTime.Now.ToShortTimeString();
             string cod = cmbxProducto.Text.Substring(0, 2);
-            string cod2= contador.Substring(3,2);
+            string cod2 = contador.Substring(3, 2);
             return cod + "-" + cod2;
         }
 
         private void txtID_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btCambiarImagen_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En proceso...");
         }
     }
 }
