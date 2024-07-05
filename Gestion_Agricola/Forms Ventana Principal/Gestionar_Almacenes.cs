@@ -14,6 +14,7 @@ namespace Gestion_Agricola
 {
     public partial class Gestionar_Almacenes : Form
     {
+        string contador;
         ConexionBD conex2 = new ConexionBD();
         public string fecha = DateTime.Now.ToString();
         public Gestionar_Almacenes()
@@ -62,19 +63,19 @@ namespace Gestion_Agricola
         {
             if (cmbxProducto.Text == "arroz")
             {
-                txtID.Text = "Ar-001";
+                txtID.Text = crearCodigo(contador);
             }
-            else if (cmbxProducto.Text == "zanahoria")
+            else if (cmbxProducto.Text == "zanahorias")
             {
-                txtID.Text = "Zr-001";
+                txtID.Text = crearCodigo(contador);
             }
             else if (cmbxProducto.Text == "papas")
             {
-                txtID.Text = "Pp-001";
+                txtID.Text = crearCodigo(contador);
             }
             else if (cmbxProducto.Text == "frijol")
             {
-                txtID.Text = "Fr-001";
+                txtID.Text = crearCodigo(contador);
             }
         }
 
@@ -82,18 +83,17 @@ namespace Gestion_Agricola
         {
 
         }
-        public string crearCodigo(int contador)
+        public string crearCodigo(string contador)
         {
-            contador++;
-            string cod=cmbxProducto.Text.Substring(0,2);
-            if (contador < 10)
-            {
-                txtID.Text = cod + "-0" + contador;
-            }else if (contador < 100)
-            {
-                txtID.Text = cod + "-";
-            }
-            return txtID.Text;
+            contador = DateTime.Now.ToShortTimeString();
+            string cod = cmbxProducto.Text.Substring(0, 2);
+            string cod2= contador.Substring(3,2);
+            return cod + "-" + cod2;
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -332,5 +332,10 @@ namespace Gestion_Agricola
                 btGestionarParcelas.BackColor = Color.HotPink;
             }
         }
+
+        private void lbhora_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

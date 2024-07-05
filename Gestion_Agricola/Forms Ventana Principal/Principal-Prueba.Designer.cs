@@ -520,6 +520,7 @@
             lbhora.Size = new Size(164, 70);
             lbhora.TabIndex = 0;
             lbhora.Text = "hora";
+            lbhora.Click += lbhora_Click;
             // 
             // tmrFecha_Hora
             // 

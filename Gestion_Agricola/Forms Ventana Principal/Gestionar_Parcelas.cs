@@ -14,7 +14,8 @@ namespace Gestion_Agricola
 {
     public partial class Gestionar_Parcelas : Form
     {
-        public ConexionBD coneccion=new ConexionBD();   
+        string contador;
+        public ConexionBD coneccion = new ConexionBD();
         public Gestionar_Parcelas()
         {
             InitializeComponent();
@@ -38,11 +39,11 @@ namespace Gestion_Agricola
 
             try
             {
-                sqlcommand = new SqlCommand(query,coneccion.conex);
-                sqlcommand.Parameters.AddWithValue("@_Codigo",crearcodigo());
-                sqlcommand.Parameters.AddWithValue("@_Cultivo",txtCultivo.Text);
+                sqlcommand = new SqlCommand(query, coneccion.conex);
+                sqlcommand.Parameters.AddWithValue("@_Codigo", crearCodigo(contador));
+                sqlcommand.Parameters.AddWithValue("@_Cultivo", cmbxCultivo.Text);
                 sqlcommand.Parameters.AddWithValue("@fecha_Abono", Convert.ToDateTime(datefechaabono.Text));
-                sqlcommand.Parameters.AddWithValue("@_Limpieza",combolimpieza.Text);
+                sqlcommand.Parameters.AddWithValue("@_Limpieza", combolimpieza.Text);
                 sqlcommand.Parameters.AddWithValue("@_Fumigacion", combofumigacion.Text);
                 sqlcommand.Parameters.AddWithValue("@_Tiempo_Cosecha", combotiempocosecha.Text);
                 sqlcommand.ExecuteNonQuery();
@@ -55,12 +56,17 @@ namespace Gestion_Agricola
             }
 
         }
-
-        private string crearcodigo()
+        public string crearCodigo(string contador)
         {
-            string cod = "001-cod";
+            contador = DateTime.Now.ToShortTimeString();
+            string cod = cmbxCultivo.Text.Substring(0, 2);
+            string cod2 = contador.Substring(3, 2);
+            return cod + "-" + cod2;
+        }
 
-            return cod ;
+        private void Gestionar_Parcelas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
