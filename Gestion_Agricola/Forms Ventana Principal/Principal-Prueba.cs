@@ -18,6 +18,8 @@ namespace Gestion_Agricola
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+
+        
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         public Principal_Prueba()
         {
@@ -208,8 +210,6 @@ namespace Gestion_Agricola
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form_Administracion a = new Form_Administracion();
-            a.Show();
         }
 
         private void ChildrenForm_Paint(object sender, PaintEventArgs e)

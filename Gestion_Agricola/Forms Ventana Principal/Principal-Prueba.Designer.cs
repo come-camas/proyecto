@@ -55,7 +55,6 @@
             panel3 = new Panel();
             pictureBox4 = new PictureBox();
             ChildrenForm = new Panel();
-            pictureBox6 = new PictureBox();
             lbfecha = new Label();
             lbhora = new Label();
             tmrFecha_Hora = new System.Windows.Forms.Timer(components);
@@ -71,7 +70,6 @@
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ChildrenForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -472,7 +470,6 @@
             // ChildrenForm
             // 
             ChildrenForm.BackColor = Color.DarkSlateGray;
-            ChildrenForm.Controls.Add(pictureBox6);
             ChildrenForm.Controls.Add(lbfecha);
             ChildrenForm.Controls.Add(lbhora);
             ChildrenForm.Dock = DockStyle.Fill;
@@ -482,21 +479,9 @@
             ChildrenForm.TabIndex = 2;
             ChildrenForm.Paint += ChildrenForm_Paint;
             // 
-            // pictureBox6
-            // 
-            pictureBox6.BackColor = Color.Azure;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(772, 577);
-            pictureBox6.Margin = new Padding(2);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(59, 58);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 3;
-            pictureBox6.TabStop = false;
-            pictureBox6.Click += pictureBox6_Click;
-            // 
             // lbfecha
             // 
+            lbfecha.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             lbfecha.AutoSize = true;
             lbfecha.BackColor = Color.Transparent;
             lbfecha.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
@@ -509,6 +494,7 @@
             // 
             // lbhora
             // 
+            lbhora.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             lbhora.AutoSize = true;
             lbhora.BackColor = Color.Transparent;
             lbhora.Font = new Font("Arial Rounded MT Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
@@ -548,7 +534,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ChildrenForm.ResumeLayout(false);
             ChildrenForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 
@@ -582,6 +567,5 @@
         private System.Windows.Forms.Timer tmrFecha_Hora;
         private Boton_personalizado Bt_Nombre_de_Usuario;
         private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
     }
 }
